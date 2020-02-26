@@ -1,3 +1,14 @@
 @charset "UTF-8"
 /*First responsive site*/
-	
+	body {
+		margin:0;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+#toggleAssist, 
+ul.nav-links {
+	display: none;
+}
+
+#toggleAssist:checked + ul.nav-links 
+{display:block;}
