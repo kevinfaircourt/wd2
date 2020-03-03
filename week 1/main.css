@@ -1,11 +1,11 @@
 @charset "UTF-8"
 /*First responsive site*/
 
- ; *{
+	/* {
   box-sizing: border-box;
-}
-
-.col-1 {width: 8.33%;}
+} */ 
+	
+;.col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -34,15 +34,18 @@
 
 		body {
 		margin:0;
-		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		box-sizing: border-box;	
 }
 header {
     width: 100%;
     background-color:  white;
+	box-sizing: border-box;
+	position: fixed;
 }
 
 .logo {
-    max-width: 75px;
+    max-width: 175px;
     margin: 10px;
 }
 
@@ -82,10 +85,12 @@ main {
     width: 100%;
     background-color: white;
     margin: auto;
+	box-sizing: border-box;
 }
 
 section {
     padding: 20px;
+	box-sizing: border-box;
 }
 
 img {
