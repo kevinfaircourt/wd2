@@ -5,6 +5,7 @@
   box-sizing: border-box;
 } */ 
 	
+	
 ;.col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -45,7 +46,7 @@ header {
 }
 
 .logo {
-    max-width: 175px;
+    width: 76px;
     margin: 10px;
 }
 
@@ -94,7 +95,7 @@ section {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
 }
 	@media (min-width: 450px) 
 	
