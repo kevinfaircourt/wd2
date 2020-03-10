@@ -1,8 +1,9 @@
-@charset "UTF-8"
+
+
 /*First responsive site*/
 
 	
-		;body {
+		body {
 		margin:0;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	
@@ -43,7 +44,9 @@ ul.nav-links {
 
 .nav-links li {
     padding: 10px 0px;
-    border-bottom: 1px solid rgb(156, 6, 106);
+    border-bottom: 1px solid rgb(0,0,0);
+	align-content: center;
+	text-align: center;
 }
 
 .nav-links a {
