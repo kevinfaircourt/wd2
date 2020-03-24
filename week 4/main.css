@@ -2,7 +2,26 @@
 @import url("colors.css");
 @import url("navbar.css");
 
+header {
+    width: 100%;
+    background-color: black;
+}
+
 body {
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+}
+.toggle-button {
+    width: 40px;
+    float: right;
+    margin: 10px;
+	
+}	
+
+#toggleAssist, ul.nav-links {
+	display: none;
+}
+
+#toggleAssist:checked + ul.nav-links {
+    display:block;
 }

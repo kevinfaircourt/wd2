@@ -10,7 +10,7 @@ nav .logo {
 
 }
 nav .logo-container {
-    background-color: #000408;
+    background-color: black;
     text-align: center;
 }
 
@@ -51,12 +51,15 @@ nav a {
         flex-direction: row;
 
     }
+    .toggle-button {
 
+        display: none;
+    }
     nav.flex {
         justify-content: space-between;
     
     }
-
+ 
     ul .flex {
         flex-direction: row;
         align-items: center;
