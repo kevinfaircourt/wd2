@@ -1,0 +1,54 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+nav .logo {
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+@media (min-width: 960px){
+    .flex {
+        flex-direction: row;
+
+    }
+
+    nav.flex {
+        justify-content: space-between;
+    }
+
+    ul .flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    nav .logo {
+        max-width: 30%;
+    }
+
+    nav ul li {
+        border-bottom: none;
+        border-left: 1px black;
+        border-right: 1px black;
+
+    }
+    
+}
