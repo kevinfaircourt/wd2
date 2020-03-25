@@ -1,0 +1,114 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+nav .logo {
+    max-width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+nav .logo-container {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+nav ul {
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+
+}
+
+nav ul li {
+    padding: 10px;
+    border-bottom: .5px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size: large;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+
+.order-3{
+    order: 3;
+}
+
+.image-grid img {
+    width: 80%;
+}
+
+.image-grid p {
+    padding: 10px;
+}
+
+section.flex {
+    align-items: center;
+}
+
+@media (min-width: 960px){
+    .flex {
+        /* flex-direction: row; */
+        justify-content: space-between;
+    }
+    
+    nav.flex {
+        justify-content: space-between;
+    
+    }
+ 
+    ul .flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    nav .logo {
+        max-width: 30%;
+        max-width: 140px;
+    
+    }
+
+    nav ul li {
+        border-bottom: none;
+        border-left: 1px black;
+        border-right: 1px black;
+
+    }
+    .flex yellow-bg {
+        flex-direction: row; 
+
+    }
+    .order-md-1{
+        order: 1;
+    }
+    
+    .order-md-2{
+        order: 2;
+    }
+    
+    .order-md-3{
+        order: 3;
+    }
+    .image-grid img {
+        width: 80%;
+    }
+    
+    .image-grid p {
+        padding: 10px;
+    }
+    /* jeffryes/connected cat github */
+}
