@@ -1,0 +1,55 @@
+
+@import url("colors.css");
+@import url("navbar.css");
+
+header {
+    width: 100%;
+    background-color: white;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+    text-decoration: white;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: [h-line-1 firstH] 1fr [h-line-2] 1fr [h-line-3] 1fr [h-line-4];
+    grid-template-columns: [v-line-1] auto [v-line-2] auto [v-line-3] auto [v-line-4];
+    grid-gap: 15px;
+    height: 200px;
+}
+
+.gd-3 {
+grid-column: v-line-1 / v-line-4;
+grid-row: 1 / h-line-3;
+}
+
+.gd-4, .gd-5 {
+    grid-row: h-line-2 / h-line-4;
+}
+
+.gd-6 {
+    grid-row: h-line-3 / h-line-4;
+}
+
+
+main {
+    width: 100%;
+    background-color:  white;
+    margin: auto;
+	text-align: center;
+}
+section {
+    padding: 20px;
+	text-align: center;
+	padding-top: 100px;
+	align-items: center;
+}
+@media (min-width: 960px) {
+    .grid-container {        
+    width: 800px;
+    }     
+}
