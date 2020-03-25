@@ -1,4 +1,4 @@
-@import url("layout.css");
+
 @import url("colors.css");
 @import url("navbar.css");
 
@@ -11,17 +11,17 @@ body {
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
 }
-.toggle-button {
-    width: 40px;
-    float: right;
-    margin: 10px;
-	
-}	
 
-#toggleAssist, ul.nav-links {
-	display: none;
+
+main {
+    width: 100%;
+    background-color: black;
+    margin: auto;
+	text-align:center;
 }
-
-#toggleAssist:checked + ul.nav-links {
-    display:block;
+section {
+    padding: 20px;
+	text-align: center;
+	padding-top: 100px;
+	align-items: center;
 }

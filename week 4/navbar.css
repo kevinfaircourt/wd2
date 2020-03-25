@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 nav .logo {
-    max-width: 50%;
+    max-width: 75%;
     padding: 10px;
     box-sizing: border-box;
 
@@ -23,7 +23,7 @@ nav ul {
 
 nav ul li {
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: .5px solid black;
     text-align: center;
     font-size: large;
 }
@@ -45,16 +45,24 @@ nav a {
     order: 3;
 }
 
+.image-grid img {
+    width: 80%;
+}
+
+.image-grid p {
+    padding: 10px;
+}
+
+section.flex {
+    align-items: center;
+}
 
 @media (min-width: 960px){
     .flex {
         flex-direction: row;
-
+        justify-content: space-between;
     }
-    .toggle-button {
-
-        display: none;
-    }
+    
     nav.flex {
         justify-content: space-between;
     
@@ -89,5 +97,12 @@ nav a {
     .order-md-3{
         order: 3;
     }
+    .image-grid img {
+        width: 80%;
+    }
     
+    .image-grid p {
+        padding: 10px;
+    }
+    /* jeffryes github */
 }
