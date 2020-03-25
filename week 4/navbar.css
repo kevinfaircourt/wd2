@@ -23,14 +23,15 @@ nav ul {
 
 nav ul li {
     padding: 10px;
-    border-bottom: .5px solid black;
+    border-bottom: .5px solid rgb(255, 255, 255);
     text-align: center;
     font-size: large;
+
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
 
 }
 .order-1{
@@ -86,6 +87,10 @@ section.flex {
         border-right: 1px black;
 
     }
+    .flex yellow-bg {
+        display: none;
+
+    }
     .order-md-1{
         order: 1;
     }
@@ -104,5 +109,5 @@ section.flex {
     .image-grid p {
         padding: 10px;
     }
-    /* jeffryes github */
+    /* jeffryes/connected cat github */
 }
