@@ -11,6 +11,10 @@ header {
 }
 .floater-img {
 	max-width: 200px;
+	
+}
+.floater {
+	padding-top: 80px;
 }
 
 .toggle-button {
