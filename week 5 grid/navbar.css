@@ -3,10 +3,14 @@
     flex-direction: column;
     margin: 0 auto;
 }
-
+nav.flex {
+	display: none;
+}
+.header 
+	
 nav .logo {
-    max-width: 50%;
-    padding: 10px;
+    max-width: 30%;
+    padding: 20px;
     box-sizing: border-box;
 
 }
@@ -59,15 +63,16 @@ section.flex {
     align-items: center;
 }
 
-@media (min-width: 960px){
+@media (min-width: 768px){
     .flex {
-        /* flex-direction: row; */
+		display: flex;
+        flex-direction: row; 
         justify-content: space-between;
     }
     
     nav.flex {
-        justify-content: space-between;
-    
+        justify-content: space-evenly;
+    	display: flex;
     }
  
     ul .flex {
@@ -77,21 +82,17 @@ section.flex {
     }
 
     nav .logo {
-        max-width: 30%;
-        max-width: 140px;
+        max-width: 20%;
+        max-width: 100px;
     
     }
 
-    nav ul li {
-        border-bottom: none;
-        border-left: 1px black;
-        border-right: 1px black;
 
-    }
     .flex yellow-bg {
-        flex-direction: row; 
+       display: none; 
 
     }
+
     .order-md-1{
         order: 1;
     }
@@ -103,12 +104,7 @@ section.flex {
     .order-md-3{
         order: 3;
     }
-    .image-grid img {
-        width: 80%;
-    }
-    
-    .image-grid p {
-        padding: 10px;
-    }
+  
+
     /* jeffryes/connected cat github */
 }
