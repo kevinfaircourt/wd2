@@ -39,8 +39,9 @@ header {
 	display: none;
 }
 
-#toggleAssist:checked + ul.nav-links 
-{display:block;}
+#toggleAssist:checked + ul.nav-links {
+	display:block;
+}
 
 	
 	
