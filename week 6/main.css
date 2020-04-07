@@ -7,6 +7,10 @@ body {
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 
 }
+p {
+	text-align: center;
+	line-height: 1.3em;
+}
 
 h1 {
 	text-align: center;
@@ -27,7 +31,7 @@ header {
 .toggle-button {
     width: 40px;
     float: right;
-    margin: 10px;
+    margin: 20px;
 	
 }	
 
