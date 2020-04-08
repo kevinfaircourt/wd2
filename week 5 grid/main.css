@@ -28,15 +28,11 @@ header {
 	display: none;
 }
 
-#toggleAssist:checked +ul.nav-links {
-    display:block;
+#toggleAssist:checked + nav.flex {
+    display:flex;
+	
 }
-#toggleAssist:checked+ ul.yellow-bg {
-	display: block;
-}
-#toggleAssist:checked+ ul.order-2 {
-	display: inline-block;
-}
+
 body {
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;

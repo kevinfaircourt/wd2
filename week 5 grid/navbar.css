@@ -2,21 +2,26 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+	letter-spacing: 0.109em;
+	font-size: 21px;
 }
 nav.flex {
 	display: none;
 }
-.header 
+
+.logo {
+	width: 200px;
+}
 	
 nav .logo {
-    max-width: 30%;
-    padding: 20px;
+    max-width: 100%;
     box-sizing: border-box;
 
 }
 nav .logo-container {
     background-color: rgb(255, 255, 255);
     text-align: center;
+	max-width: 200px;
 }
 
 nav ul {
