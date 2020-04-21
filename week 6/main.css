@@ -11,7 +11,9 @@ p {
 	text-align: center;
 	line-height: 1.3em;
 }
-
+h2 {
+	font-size: 20px;
+}
 h1 {
 	text-align: center;
 	text-transform: uppercase;
@@ -70,22 +72,57 @@ main {
     margin: auto;
 	align-text:center;
 }
+.row {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display: inline-block
+}
+
+.columns {
+	width: 100%;
+	float: left;
+	line-height: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.row .columns p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 section {
     padding: 20px;
 	align-text: center;
 	padding-top: 120px;
-	align-items: center;
 }
 
 img {
     max-width: 100%;
 	
 }
-
+img.thumbnail {
+	max-height: 200px;
+	max-width: 225px;
+}
 .floater-img {
 	max-width: 100px;
-	
+
 }
+
 	@media (min-width: 450px) {
 		
     main {
@@ -124,7 +161,20 @@ img {
 	
 	}
 	
-} /*END OF MED QUERY*/
+	.columns {
+	width: 45%;
+	float: left;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.container .columns p {
+	padding-left: 25px;
+	padding-right: 15px;
+}
+} 
+/*END OF MED QUERY*/
 
 
 @media (min-width: 960px){
