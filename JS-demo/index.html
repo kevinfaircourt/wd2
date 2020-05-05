@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JavaScript</title>
+    <style>
+        #header1{
+        color: black;
+        }
+
+        .pane {
+            width: 100%;
+            height: 200px;
+        }
+
+        #tealPane {
+            background-color: teal;
+        }
+        #bluePane {
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="header1">Intro to JavaScript</h1>
+     <section>
+         <div class="pane" id="tealPane"></div>
+         <button id="changeToRed">Change to Red</button>    
+         <div class="pane" id="bluePane"></div>
+         <button id="changeToYellow">Change to Yellow</button>
+     </section>
+
+    <script>
+    confirm("Are you a real person?")
+
+    var myHeader = document.getElementById("header1");
+    var response = prompt("What is your name?", "Ronald Frump");
+
+    var redButton = document.getElementById("changeToRed");
+    var yellowButton = document.getElementById("changeToYellow")
+    var tealPane = document.getElementById("tealPane");
+    var bluePane = document.getElementById("bluePane");
+    
+    myHeader.style.color = "red";
+    myHeader.style.backgroundColor = "black";
+    myHeader.style.fontsize = "65px";
+    
+    myHeader.innerText = "Hi There! " + response;
+    console.log("Hello" + 5 + "pingpong")    
+    
+    redButton.addEventListener("click", function(){
+        console.log("red click happened!");
+        tealPane.style.backgroundColor = "red";
+        var notification = document.createElement("h5");
+        notification.innerText = "This is red now";
+        tealPane.appendChild(notification);
+    });
+
+    yellowButton.addEventListener("click", function(){
+        console.log("yellow click happened!");
+        bluePane.style.backgroundColor = "yellow";
+        var notification = document.createElement("h5");
+        notification.innerText = "This is yellow now";
+        bluePane.appendChild(notification);
+    });
+   
+   </script>
+
+
+</body>
+</html>
