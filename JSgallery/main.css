@@ -113,7 +113,7 @@ section {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
 	
 }
 img.thumbnail {
@@ -121,7 +121,7 @@ img.thumbnail {
 	max-width: 225px;
 }
 .image-grid img {
-    width: 80%;
+    width: 50%;
 }
 
 .image-grid p {
@@ -134,9 +134,15 @@ section.flex {
 
 .flex {
     display: flex;
-    flex-direction: row;
 	margin: 0 auto;
+	justify-content: space-evenly;
+	flex-direction: row;
 
+}
+.images {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
 }
 
 	@media (min-width: 450px) {
