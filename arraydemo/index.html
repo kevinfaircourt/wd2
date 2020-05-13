@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo</title>
+</head>
+<body>
+<header>
+    <hr>
+    <main id="gallery">
+        <img src="images/dt10.jpg" alt="design thinking 10" id="galleryImg">
+    </main>
+
+<form method="GET" action="">
+    <label for="groupSelect">Group</label>
+    <select id="groupSelect">
+    <option value="animals">Cute Animals</option>
+    <option value="food">Food</option>
+    <option value="nature">Nature</option>
+    </select>
+    <label for="catSelect">Category</label>
+    <select id="catSelect"></select>
+
+    
+</form>
+</header>
+
+<script>
+var groupSelect = document.getElementById("groupSelect");
+var catSelect = document.getElementById("catSelect");
+var galleryImg = document.getElementById("galleryImg");
+
+var catAnimals = ["Puppies", "Kitten", "Quokkas"];
+var catFood = ["Coffee", "Dessert", "Cocktails"];
+var catNature = ["Forests", "Beaches", "Mountains",];
+
+var imageCounter = 1; 
+
+groupSelect.addEventListener("change", function(){
+    console.log(groupSelect.value); 
+
+    if (groupSelect.value == "animals"){
+       fillCategory(catAnimals);
+    }
+    else if (groupSelect.value == "food"){
+        fillCategory(catFood);
+    }
+    else if (groupSelect.value == "nature"){
+        fillCategory(catNature);
+        }
+    else {
+        catSelect.innerHTML = "";
+        }
+})
+
+var fillCategory = function(catArray){
+    catSelect.innerHTML = "";
+    catArray.forEach(function(member){
+        var opt = document.createElement("option");
+        opt.value = member;
+        opt.textContent = member;
+        catSelect.appendChild(opt);
+    })
+}
+
+var timerFunction = function(){
+    console.log(imageCounter);
+
+    if(imageCounter == 1){
+        galleryImg.src = "images/dt4.jpg";
+        imageCounter = 2;
+    }
+    else if(imageCounter == 2){
+        galleryImg.src = "images/dt5.jpg";
+        imageCounter = 3;
+
+    }else if(imageCounter == 3){
+        galleryImg.src = "images/dt3.png";
+        imageCounter = 1;
+    }
+
+}
+        window.setInterval(timerFunction, 3000);
+
+</script>
+</body>
+</html>
