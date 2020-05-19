@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Demo</title>
+    <link rel="stylesheet" href="main.css"/>
+
+    <title>Carousel</title>
 </head>
 <body>
 <header>
+    <h1>Design Thinking</h1>
     <hr>
-    <main id="gallery">
-        <img src="images/dt10.jpg" alt="design thinking 10" id="galleryImg">
+    <main id="galleryCarousel">
+        <img src="images/dt10.jpg" alt="design thinking 10" id="galleryImg-1"/>
+        <img src="images/dt3.png" alt="design thinking 3" id="galleryImg-2"/>
+        <img src="images/dt4.jpg" alt="design thinking 4" id="galleryImg-3"/>
+        <img src="images/dt5.jpg" alt="design thinking 5" id="galleryImg-4"/>
+
     </main>
 
 <form method="GET" action="">
-    <label for="groupSelect">Group</label>
+    <label for="groupSelect">IXD</label>
     <select id="groupSelect">
-    <option value="animals">Cute Animals</option>
-    <option value="food">Food</option>
-    <option value="nature">Nature</option>
-    </select>
-    <label for="catSelect">Category</label>
-    <select id="catSelect"></select>
+        
+
+        <option value="steps">Steps</option>
+        <option value="lessons">Lessons</option>
+        <option value="examples">Examples</option>
+        </select>
+
+        <label for="catSelect">Select</label>
+        <select id="catSelect">    
+        </select>
+
 
     
 </form>
@@ -31,23 +43,23 @@ var groupSelect = document.getElementById("groupSelect");
 var catSelect = document.getElementById("catSelect");
 var galleryImg = document.getElementById("galleryImg");
 
-var catAnimals = ["Puppies", "Kitten", "Quokkas"];
-var catFood = ["Coffee", "Dessert", "Cocktails"];
-var catNature = ["Forests", "Beaches", "Mountains",];
+var catSteps = ["Empathize", "Define", "Ideate", "Prototype", "Test",];
+var catLessons = ["User Testing", "MVP", "Pivots",];
+var catExamples = ["UX", "Mobile Apps", "IOT", "Coding", "Research",];
 
 var imageCounter = 1; 
 
 groupSelect.addEventListener("change", function(){
     console.log(groupSelect.value); 
 
-    if (groupSelect.value == "animals"){
-       fillCategory(catAnimals);
+    if (groupSelect.value == "steps"){
+       fillCategory(catSteps);
     }
-    else if (groupSelect.value == "food"){
-        fillCategory(catFood);
+    else if (groupSelect.value == "lessons"){
+        fillCategory(catLessons);
     }
-    else if (groupSelect.value == "nature"){
-        fillCategory(catNature);
+    else if (groupSelect.value == "examples"){
+        fillCategory(catExamples);
         }
     else {
         catSelect.innerHTML = "";

@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgb(64, 64, 223);
+
+}
+
+header h1 {
+    margin-top: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    color: rgb(black);
+}
+
+hr {
+    margin: 0px;
+}
+
+form {
+    margin-top: 15px;
+    
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(88, 43, 99,);
+}
+
+select {
+    margin-right: 25px;
+    padding: 5px;
+}
+
+#galleryCarousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+
+    box-sizing: border-box;
+    background-color: rgb(blue);
+    border-radius: 5px;
+}
+
+#galleryCarousel img {
+    width: 20%;
+    border-radius: 3px;
+}
+
+#galleryCarousel img:hover {
+    box-shadow: 8px 8px 15px black;
+}
+
