@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Intro</title>
+</head>
+<body>
+    <main>
+        <div>
+            <div class="long-ps"></div>
+            <p id="someP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia accusamus itaque.</p>
+            <p class = "long-paragraph">Lorem maxime architecto minima vero dicta! Eius, recusandae!</p>
+        </div>
+
+       <section id="galleryCarousel">
+        <img src="images/quok.jpg" alt="quokka img" class="hideable-img"></div>
+        <img src="images/quok.jpg" alt="quokka img" class="hideable-img2"></div>
+        <img src="images/quok.jpg" alt="quokka img" class="hideable-img3"></div>
+        <img src="images/quok.jpg" alt="quokka img" class="hideable-img4"></div>
+        </section>
+
+       <section id="buttonRow">
+        <button id="fadeToggleBtn">Click me to toggle the images' fading</button>
+        <button id="fadeToggleBtn">Click me to toggle the images' fading</button>
+        <button id="fadeToggleBtn">Click me to toggle the images' fading</button>
+        <button id="fadeToggleBtn">Click me to toggle the images' fading</button>
+      </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+    <script>
+
+    $("#clickB").click(function(){
+        $(".long-ps").append('<p class="long-paragraph">Words Added></p>');
+    });
+
+    $("#clickR").click(function(){
+     $('.long-paragraph').remove();
+    })
+
+    $("#hideBtn").click(function(){
+     $('.hideable-img').hide();
+    })
+    $("toggleBtn").click(function(){
+     $('.hideable-img').toggle();
+    })
+
+    $("#fadeOutBtn").click(function () {
+        $('.hideable-img').fadeOut(4000, function () {
+          $(".images").append('<h1>Image Hidden Now!</h1>')
+        });
+      })
+    $("#fadeToggleBtn").click(function () {
+    $('.hideable-img').fadeToggle(2000);
+      })
+
+    $("#slideUpBtn").click(function () {
+    $('.hideable-img').slideUp(2000);
+      })
+
+    $('#customAnim').click(function () {
+        $('.hideable-img').animate({
+          height: "0px",
+          width: "920px",
+          marginBottom: "657px"
+        }, 2000);
+      })
+      
+      //end of customAnim click
+
+   
+    </script>
+
+</body>
+</html>
