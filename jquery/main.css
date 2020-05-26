@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    background-color: white;
+}
+
+.images {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+width: 90%;
+margin: 50px auto;
+padding: 20px;
+
+box-sizing: border-box;
+background-color: rgb(blue);
+border-radius: 5px;
+}
