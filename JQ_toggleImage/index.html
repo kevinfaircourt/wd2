@@ -33,50 +33,23 @@
     
     <script>
 
-    $("#clickB").click(function(){
-        $(".long-ps").append('<p class="long-paragraph">Words Added></p>');
-    });
 
-    $("#clickR").click(function(){
-     $('.long-paragraph').remove();
-    })
-
-    $("#hideBtn").click(function(){
-     $('.hideable-img').hide();
-    })
-
-    $("toggleBtn").click(function(){
+    $("fadeToggleBtn").click(function(){
      $('.hideable-img').toggle();
     })
-    $("toggleBtn2").click(function(){
+    $("fadeToggleBtn2").click(function(){
      $('.hideable-img2').toggle();
     })
-    $("toggleBtn3").click(function(){
+    $("fadeToggleBtn3").click(function(){
      $('.hideable-img3').toggle();
     })
-    $("toggleBtn4").click(function(){
+    $("fadeToggleBtn4").click(function(){
      $('.hideable-img4').toggle();
     })
 
-    $("#fadeOutBtn").click(function () {
-        $('.hideable-img').fadeOut(4000, function () {
-          $(".images").append('<h1>Image Hidden Now!</h1>')
-        });
-      })
+  
     $("#fadeToggleBtn").click(function () {
     $('.hideable-img').fadeToggle(2000);
-      })
-
-    $("#slideUpBtn").click(function () {
-    $('.hideable-img').slideUp(2000);
-      })
-
-    $('#customAnim').click(function () {
-        $('.hideable-img').animate({
-          height: "0px",
-          width: "920px",
-          marginBottom: "657px"
-        }, 2000);
       })
       
       //end of customAnim click
