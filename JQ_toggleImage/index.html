@@ -3,63 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+
     <title>JQuery Intro</title>
 </head>
 <body>
     <main>
         <div>
             <div class="long-ps"></div>
-            <p id="someP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia accusamus itaque.</p>
-            <p class = "long-paragraph">Lorem maxime architecto minima vero dicta! Eius, recusandae!</p>
+            <p id="someP">Re-appearing Quokka Game.</p>
+            <p class = "long-paragraph">Click the button to re-appear!</p>
         </div>
 
-       <section id="galleryCarousel">
-        <img src="images/quok.jpg" alt="quokka img" class="hideable-img"></div>
-        <img src="images/quok.jpg" alt="quokka img" class="hideable-img2"></div>
-        <img src="images/quok.jpg" alt="quokka img" class="hideable-img3"></div>
-        <img src="images/quok.jpg" alt="quokka img" class="hideable-img4"></div>
+       <main id="galleryCarousel">
+        
+        <img src="images/quok.jpg" alt="quokka img" class='hideable-img'></div>
+        <img src="images/quok1.jpg" alt="quokka img" class='hideable-img-2'></div>
+        <img src="images/quoka2.jpg" alt="quokka img" class='hideable-img-3'></div>
+        <img src="images/quoka3.jpg" alt="quokka img" class='hideable-img-4'></div>
         </section>
 
-       <section id="buttonRow">
-        <button id="fadeToggleBtn">Click for Toggle</button>
-        <button id="fadeToggleBtn2">Click for Toggle</button>
-        <button id="fadeToggleBtn3">Click for Toggle</button>
-        <button id="fadeToggleBtn4">Click for Toggle</button>
-      </section>
+      
 
     </main>
+
+    <section class="buttonRow">
+      <button id="fadeToggleBtn">Click for Toggle</button>
+      <button id="fadeToggleBtn-2">Click for Toggle</button>
+      <button id="fadeToggleBtn-3">Click for Toggle</button>
+      <button id="fadeToggleBtn-4">Click for Toggle</button>
+
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     
     <script>
-
-    $("#fadeToggleBtn").click(function(){
+     $("#fadeToggleBtn").click(function(){
      $('.hideable-img').toggle();
     })
-    $("#fadeToggleBtn2").click(function(){
-     $('.hideable-img2').toggle();
+    $("#fadeToggleBtn-2").click(function(){
+     $('.hideable-img-2').fadeToggle(2000);
     })
-    $("#fadeToggleBtn3").click(function(){
-     $('.hideable-img3').toggle();
+    $("#fadeToggleBtn-3").click(function(){
+     $('.hideable-img-3').slideUp(2000);
     })
-    $("#fadeToggleBtn4").click(function(){
-     $('.hideable-img4').toggle();
+    $("#fadeToggleBtn-4").click(function(){
+     $('.hideable-img-4').animate({
+          height: "0px",
+          width: "920px",
+          marginBottom: "657px"
+        }, 2000);
     })
 
-  
-    $("#fadeToggleBtn").click(function () {
-    $('.hideable-img').fadeToggle(2000);
-      })
-      $("#fadeToggleBtn2").click(function () {
-    $('.hideable-img2').fadeToggle(2000);
-      })
-      $("#fadeToggleBtn3").click(function () {
-    $('.hideable-img3').fadeToggle(2000);
-      })
-      $("#fadeToggleBtn4").click(function () {
-    $('.hideable-img4').fadeToggle(2000);
-      })
-      
+
+
+   
+
+   
+   
+     
+
       //end of customAnim click
 
    

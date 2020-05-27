@@ -2,7 +2,9 @@ body {
     margin: 0px;
     background-color: white;
     text-align: center;
+    
 }
+
 
 header {
     width: 100%;
@@ -41,8 +43,8 @@ select {
 #galleryCarousel {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 90%;
     margin: 50px auto;
     padding: 20px;
@@ -52,18 +54,19 @@ select {
     border-radius: 5px;
 }
 
-#buttonRow {
+.buttonRow {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
+    width: 100%;
 }
-#galleryCarousel img {
+.galleryCarousel img {
     width: 20%;
     border-radius: 3px;
 }
 
-#galleryCarousel img:hover {
+.galleryCarousel img:hover {
     box-shadow: 4px 4px 8px black;
 }
 
