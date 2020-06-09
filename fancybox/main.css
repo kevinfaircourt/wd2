@@ -3,6 +3,7 @@ header {
     background-color:  white;
     position: fixed;
     margin-top: -8px;
+    z-index: 500
     
 }
 
@@ -10,6 +11,7 @@ header {
     max-width: 200px;
     margin: 10px;
     padding-top: 10px;
+    justify-self: left;
 }
 
 .toggle-button {
@@ -85,13 +87,25 @@ section {
     margin: 0 auto;
     text-align: center;
     }
-    
+ 
+
 body {
         margin: 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
         
     }
     
+h1 {
+    font-size: 45px;
+    text-align: center;
+ 
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+}
+
 .hero-image {
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
         background-image: linear-gradient(rgba(241, 237, 237, 0.5), rgba(190, 186, 186, 0.5)), url("images/quokka_cs.jpg");
