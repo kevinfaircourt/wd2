@@ -3,7 +3,7 @@ header {
     background-color:  white;
     position: fixed;
     margin-top: -8px;
-    z-index: 500
+    z-index: 500;
     
 }
 
@@ -20,7 +20,10 @@ header {
     margin: 10px;
 	
 }	
-
+img.icon {
+    display: block;
+    margin: auto;
+}
 #toggleAssist, ul.nav-links {
 	display: none;
 }
