@@ -1,7 +1,8 @@
 header {
     width: 100%;
     background-color:  white;
-	position: fixed;
+    position: fixed;
+    margin-top: -8px;
 }
 
 .logo {
@@ -54,24 +55,29 @@ ul.nav-links {
 main {
     width: 100%;
     background-color: white;
-    margin: auto;
+    margin: 0 auto;
 	align-content: center;
 }
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
     padding-top: 100px;
+    margin: 0 auto;
+    width: 100%;
+   
   }
 
   .grid img {
-    max-width: 200px;
+    max-width: 100%;
   }
 
-  body {
-    margin: 2rem;
-    font: 12px system-ui;
-  }
+  
 
 @media (min-width: 768px) {
 
