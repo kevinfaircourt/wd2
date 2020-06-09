@@ -3,6 +3,7 @@ header {
     background-color:  white;
     position: fixed;
     margin-top: -8px;
+    
 }
 
 .logo {
@@ -75,23 +76,23 @@ main {
    
   }
 
-  .grid img {
+.grid img {
     max-width: 100%;
   }
 
-    section {
+section {
     padding-top: 25px;
     margin: 0 auto;
     text-align: center;
     }
     
-    body {
+body {
         margin: 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
-    
+        
     }
     
-    .hero-image {
+.hero-image {
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
         background-image: linear-gradient(rgba(241, 237, 237, 0.5), rgba(190, 186, 186, 0.5)), url("images/quokka_cs.jpg");
       
@@ -105,8 +106,23 @@ main {
         padding-top: 90px;
       }
       
-    
-    @media (min-width: 768px) {
+.hero-text {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+button {
+       border-radius: 8px;
+       background-color: white;
+       padding: 10px;
+       
+   }
+
+@media (min-width: 768px) {
 
     .toggle-button {
 
