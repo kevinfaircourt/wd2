@@ -8,6 +8,7 @@ header {
 .logo {
     max-width: 200px;
     margin: 10px;
+    padding-top: 10px;
 }
 
 .toggle-button {
@@ -30,10 +31,11 @@ ul.nav-links {
     list-style: none;
     margin: 0px;
     padding: 20px;
+    margin-top: -10px;
 }
 
 .nav-links li {
-    padding: 10px 0px;
+    padding: 20px 0px;
     border-bottom: 1px solid rgb(0,0,0);
 	align-content: center;
 	text-align: center;
@@ -43,7 +45,7 @@ ul.nav-links {
     text-transform: none;
     text-decoration: none;
     color: #000000;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
 }
 
 .nav-links li:hover {
@@ -77,9 +79,34 @@ main {
     max-width: 100%;
   }
 
-  
-
-@media (min-width: 768px) {
+    section {
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
+    
+    }
+    
+    .hero-image {
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+        background-image: linear-gradient(rgba(241, 237, 237, 0.5), rgba(190, 186, 186, 0.5)), url("images/quokka_cs.jpg");
+      
+        /* Set a specific height */
+        height: 400px;
+      
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 75%;
+        padding-top: 90px;
+      }
+      
+    
+    @media (min-width: 768px) {
 
     .toggle-button {
 
