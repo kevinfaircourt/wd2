@@ -98,6 +98,7 @@ body {
 h1 {
     font-size: 45px;
     text-align: center;
+    margin-top: -20px;
  
 }
 
@@ -108,7 +109,7 @@ p {
 
 .hero-image {
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        background-image: linear-gradient(rgba(241, 237, 237, 0.5), rgba(190, 186, 186, 0.5)), url("images/quokka_cs.jpg");
+        background-image: linear-gradient(rgba(241, 237, 237, 0.103), rgba(190, 186, 186, 0.5)), url("images/quokka_cs.jpg");
       
         /* Set a specific height */
         height: 400px;
