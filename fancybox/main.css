@@ -48,7 +48,7 @@ ul.nav-links {
 }
 
 .nav-links a {
-    text-transform: none;
+    text-transform: uppercase;
     text-decoration: none;
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
@@ -112,12 +112,12 @@ p {
 
 .hero-image {
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/quokka_cs.jpg");
+        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/Quokka_cs.jpg");
         height: 400px;
         /* Position and center the image to scale nicely on all screens */
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100% 75%;
+        background-size: cover;
         padding-top: 90px;
       }
       
@@ -126,7 +126,7 @@ p {
         height: 400px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100% 75%;
+        background-size: cover;
         padding-top: 90px;   
       }
 
