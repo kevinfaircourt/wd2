@@ -121,7 +121,14 @@ p {
         padding-top: 90px;
       }
       
-
+      .hero-image2  {
+        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/smiling quokka.jpg"); 
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 75%;
+        padding-top: 90px;   
+      }
 
 .hero-text {
         text-align: center;
