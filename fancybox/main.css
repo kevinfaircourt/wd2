@@ -72,7 +72,7 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 90%;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
     box-sizing: border-box;
     padding-top: 50px;
@@ -93,7 +93,7 @@ section {
  
 
 body {
-        margin: 0;
+        margin: 0px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
         
     }
@@ -113,10 +113,7 @@ p {
 .hero-image {
         /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
         background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/quokka_cs.jpg");
-      
-        /* Set a specific height */
         height: 400px;
-      
         /* Position and center the image to scale nicely on all screens */
         background-position: center;
         background-repeat: no-repeat;
@@ -124,18 +121,24 @@ p {
         padding-top: 90px;
       }
       
+
+
 .hero-text {
         text-align: center;
         position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin: auto;
       }
+
+     
 
 button {
        border-radius: 8px;
-       background-color: white;
+       background-color: rgb(248, 186, 104);
        padding: 10px;
        
    }
@@ -165,6 +168,5 @@ button {
         border-bottom: none;
 
     }
-
   
-    }}
+    }
