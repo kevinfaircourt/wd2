@@ -108,6 +108,8 @@ h1 {
 p {
     font-size: 22px;
     text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .hero-image {
@@ -128,7 +130,7 @@ p {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-top: 40px;   
+        margin-top: 80px;   
       }
 
 .hero-text {
@@ -148,10 +150,22 @@ p {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
         margin: auto;
         margin-top: -40px;
+        
+      }
+
+      .hero-image3  {
+        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/smiling quokka.jpg"); 
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 40px; 
+          
+    
       }
 
 button {
