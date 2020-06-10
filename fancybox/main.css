@@ -75,7 +75,7 @@ main {
     margin: 20px auto;
     padding: 20px;
     box-sizing: border-box;
-    padding-top: 50px;
+    padding-top: 40px;
     margin: 0 auto;
     width: 100%;
    
@@ -119,6 +119,7 @@ p {
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 90px;
+        margin-bottom: 20px;
       }
       
       .hero-image2  {
@@ -127,7 +128,7 @@ p {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-top: 90px;   
+        margin-top: 80px;   
       }
 
 .hero-text {
