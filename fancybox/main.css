@@ -125,7 +125,7 @@ p {
       }
       
       .hero-image2  {
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/smiling quokka.jpg"); 
+        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/nolog.jpg"); 
         height: 400px;
         background-position: center;
         background-repeat: no-repeat;
