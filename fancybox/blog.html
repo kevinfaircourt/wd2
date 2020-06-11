@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Blog</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+        
     </head>
     
 
@@ -20,12 +27,12 @@
             
             <input type="checkbox" id="toggleAssist">
                 
-    <ul class="nav-links">
+            <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="donate.html">Donate</a></li>
-    </ul>
+            </ul>
     
         </nav>
         </header>
@@ -33,13 +40,47 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1>No More Logging!</h1>
-            <p>Blogging is ok.</p>
-          </div>
+            <p>Blogging is still fine.</p>
+        </div>
     </div>
-    <section>
+    
 
+    <p>Drag & Drop the Quokka's in the forest safely.</p>
+    <section class="product-grid">
+
+        <div class="draggable">
+        <h4>Fred</h4>
+        <img src="images/quoka3.png" alt="quokka drawing">
+        </div>
+
+        <div class="draggable">
+        <h4>Fran</h4>
+        <img src="images/artq.png" alt="quokka cartoon">
+        </div>
+
+        <div class="draggable">
+        <h4>Famina</h4>
+        <img src="images/qqq.jpg" alt="quokka photo">
+        </div>
+
+        <div class="draggable">
+        <h4>Fabio</h4>
+        <img src="images/quok.jpg" alt="jumping quokka">
+        </div>
+        
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="script.js"></script>
+    
+    <section class="cart-droppable">
+    <div class="droppable">
+    </div>
+    </section>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 </body>
+<footer>
+    <script src="script.js"></script>
+</footer>
 </html>
