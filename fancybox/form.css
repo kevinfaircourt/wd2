@@ -120,18 +120,19 @@ input {
     margin: auto;
 }
 
-@media(min-width:540px) {
-    .donate-form .amount .button:hover {
-        background-color: #f7823f;
-    }
-
-    .button:hover {
-        background-color:#f7823f;
-        border: #f7823f;
-        border-width: 1px;
-        box-shadow: #1f262b;
-    }
+.donate-form .amount .button:hover {
+    background-color: #f7823f;
 }
+
+.button:hover {
+    background-color:#f7823f;
+    border: #f7823f;
+    border-width: 1px;
+    box-shadow: #1f262b;
+}
+
+@media(min-width:540px) {
+   
 
 
 @media (min-width: 800px) {
