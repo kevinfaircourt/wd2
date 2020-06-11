@@ -6,12 +6,20 @@ $(document).ready(function(){
   $(".donate-submit").click(function () {
     $("form").replaceWith($("#thanks"));
   });
+
   $("#donationTop").click(function(){
     $("#thanks").show();
   });
+  
+  $(".donate-submit").click(function(){
+    $("replace flex").show();
+  });
+
   $("#donationTop").click(function(){
     $("form").hide();
   });
+
+  
   //   Remove hidden class from replace message
   $(".donate-submit").click(function () {
     $(".replace").removeClass("hidden-all");
