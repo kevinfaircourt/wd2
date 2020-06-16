@@ -1,17 +1,19 @@
-$(document).ready(function(){
-    $(".toggle-button").click(function(){
+$(document).ready(function () {
+    $(".toggle-button").click(function () {
         $(".nav-links").slideToggle();
     });
 
     var numProducts = 0;
+    
 
     $(".draggable").draggable();
-  
+
+
     $(".droppable").droppable({
         drop: function (event, ui) {
             numProducts++;
             var plural = '';
-            if(numProducts > 1 ){
+            if (numProducts > 1) {
                 plural = "s";
             }
             $(this)
@@ -22,37 +24,38 @@ $(document).ready(function(){
 
 
     // Replace form with replace message
-  $(".donate-submit").click(function () {
-    $("form").replaceWith($("#thanks"));
-  });
+    $(".donate-submit").click(function () {
+        $("form").replaceWith($("#thanks"));
+    });
 
-  $("#donationTop").click(function(){
-    $("#thanks").show();
-  });
-  
-  $(".donate-submit").click(function(){
-    $("replace flex").show();
-  });
+    $("#donationTop").click(function () {
+        $("#thanks").show();
+    });
 
-  $("#donationTop").click(function(){
-    $("form").hide();
-  });
+    $(".donate-submit").click(function () {
+        $("replace flex").show();
+    });
 
-  
-  //   Remove hidden class from replace message
-  $(".donate-submit").click(function () {
-    $(".replace").removeClass("hidden-all");
-  });
+    $("#donationTop").click(function () {
+        $("form").hide();
+    });
 
-  $('form').submit(function (event) {
-    event.preventDefault();
-  });
 
-  // Go to top of donation
-  $('#donationTop').click(function(){ window.location = '#thanks'; 
-});
+    //   Remove hidden class from replace message
+    $(".donate-submit").click(function () {
+        $(".replace").removeClass("hidden-all");
+    });
 
- 
+    $('form').submit(function (event) {
+        event.preventDefault();
+    });
+
+    // Go to top of donation
+    $('#donationTop').click(function () {
+    window.location = '#thanks';
+    });
+
+
 
 
 
