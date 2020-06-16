@@ -71,6 +71,9 @@ select {
     align-items: center;
 }
 
+.donate-form .amount .button.active {
+    background-color: #c7580e;
+}
 
 .amount p {
     margin: 0 auto;
@@ -143,6 +146,8 @@ fieldset {
 .field select {
     margin: px;
 }
+
+
 
 @media (min-width: 800px) {
     .donate-form input {
