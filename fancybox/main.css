@@ -52,10 +52,10 @@ ul.nav-links {
 }
 
 .nav-links a {
-    c text-transform: uppercase;
+    text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
 .nav-links li:hover {
@@ -135,7 +135,7 @@ section {
 
 body {
     margin: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 
 }
 
@@ -282,6 +282,7 @@ button {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
     max-width: 600px;
+    
 }
 
 
@@ -291,6 +292,7 @@ button {
     border-radius: 1rem;
     max-width: 700px;
     margin: auto;
+   
 }
 
 .droppable {
