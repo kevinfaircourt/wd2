@@ -1,10 +1,10 @@
 header {
     width: 100%;
-    background-color:  white;
+    background-color: white;
     position: fixed;
     margin-top: -8px;
     z-index: 500;
-    
+
 }
 
 .logo {
@@ -18,21 +18,25 @@ header {
     width: 40px;
     float: right;
     margin: 10px;
-	
-}	
+
+}
+
 img.icon {
     display: block;
     margin: auto;
 }
-#toggleAssist, ul.nav-links {
-	display: none;
+
+#toggleAssist,
+ul.nav-links {
+    display: none;
 }
 
-#toggleAssist:checked + ul.nav-links 
-{display:block;}
+#toggleAssist:checked+ul.nav-links {
+    display: block;
+}
 
-	
-	
+
+
 ul.nav-links {
     list-style: none;
     margin: 0px;
@@ -42,13 +46,13 @@ ul.nav-links {
 
 .nav-links li {
     padding: 20px 0px;
-    border-bottom: 1px solid rgb(0,0,0);
-	align-content: center;
-	text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    align-content: center;
+    text-align: center;
 }
 
 .nav-links a {
-    text-transform: uppercase;
+    c text-transform: uppercase;
     text-decoration: none;
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
@@ -56,15 +60,15 @@ ul.nav-links {
 
 .nav-links li:hover {
     transition: 0.6s ease;
-     border-radius: 8%;
-     font-weight: 400;
- }
+    border-radius: 8%;
+    font-weight: 400;
+}
 
 main {
     width: 100%;
     background-color: white;
     margin: 0 auto;
-	align-content: center;
+    align-content: center;
 }
 
 .grid {
@@ -79,13 +83,14 @@ main {
     padding-top: 40px;
     margin: 0 auto;
     width: 100%;
-   
-  }
+
+}
 
 .grid img {
     max-width: 100%;
 
-  }
+}
+
 .product-grid img {
     max-width: 80%;
     max-height: 200px;
@@ -94,11 +99,11 @@ main {
 
 .cart-droppable h3 {
     padding-top: 20px;
-    
-    text-align: center;
-  }
 
-  .flex {
+    text-align: center;
+}
+
+.flex {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -106,6 +111,7 @@ main {
     align-content: center;
 
 }
+
 .replace img {
     width: 30%;
 }
@@ -114,20 +120,20 @@ section {
     padding-top: 25px;
     margin: 0 auto;
     text-align: center;
-    }
- 
+}
+
 
 body {
-        margin: 0px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
-        
-    }
-    
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Raleway', sans-serif;
+
+}
+
 h1 {
     font-size: 45px;
     text-align: center;
     margin-top: -20px;
- 
+
 }
 
 p {
@@ -138,108 +144,108 @@ p {
 }
 
 .hero-image {
-        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/Quokka_cs.jpg");
-        height: 400px;
-        /* Position and center the image to scale nicely on all screens */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 90px;
-        margin-bottom: 20px;
-      }
-      
-      .hero-image2  {
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/nolog.jpg"); 
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: 40px;   
-      }
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/Quokka_cs.jpg");
+    height: 400px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    margin-bottom: 20px;
+}
 
-      .hero-image3  {
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/forest3.jpg"); 
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: 20px;
-        
-    
-      }
+.hero-image2 {
+    background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/nolog.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
 
-      .hero-image4  {
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/smiling quokka.jpg"); 
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: 80px;   
-      }
+.hero-image3 {
+    background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/forest3.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
 
-      .hero-image5 {
-        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/quokka_1.jpg");
-        height: 400px;
-        /* Position and center the image to scale nicely on all screens */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 90px;
-        margin-bottom: -40px;
-      }
 
-      .hero-image6  {
-        background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.293)), url("images/forest.png"); 
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: 40px;   
-      }
+}
+
+.hero-image4 {
+    background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/smiling quokka.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+.hero-image5 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.5)), url("images/quokka_1.jpg");
+    height: 400px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    margin-bottom: -40px;
+}
+
+.hero-image6 {
+    background-image: linear-gradient(rgba(241, 237, 237, 0.308), rgba(190, 186, 186, 0.293)), url("images/forest.png");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+}
 
 .hero-text {
-        text-align: center;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-left: 20px;
-        margin-right: 20px;
-        margin: auto;
-      }
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: auto;
+}
 
 .hero-text2 {
-        text-align: center;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding-left: 40px;
-        padding-right: 40px;
-        margin: auto;
-        margin-top: -40px;
-        
-      }
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    margin-top: -40px;
+
+}
 
 
 button {
-       border-radius: 8px;
-       background-color: rgb(248, 186, 104);
-       padding: 10px;
-       text-decoration: none;
-   }
+    border-radius: 8px;
+    background-color: rgb(248, 186, 104);
+    padding: 10px;
+    text-decoration: none;
+}
 
 .button {
-       border-radius: 8px;
-       background-color: #f8ba68;
-       font-size: 18px;
-       padding: 5px;
-       margin: 10px;
-       
+    border-radius: 8px;
+    background-color: #f8ba68;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
 
-       
+
+
 }
 
 .product-grid {
@@ -247,32 +253,32 @@ button {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: .5rem;
     margin: auto;
-    
-
-  
-  }
 
 
-.product-grid > div { 
-  background-color: #ffffff;
-  padding: 5px;
-  border-radius: 1rem;
-  max-width: 1000px;
-  margin: auto;
-  }
 
-  .cart-droppable {
-      background-image: url("images/forest2.jpg" );
-      background-repeat: no-repeat;
-      background-position: center;
-      
-      width: 90%;
-      height: 300px;
-      background-color: #fffffff3;
-      background-size: 500px;
-      border-radius: 16px;
-    
-  }
+}
+
+
+.product-grid>div {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cart-droppable {
+    background-image: url("images/forest2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 90%;
+    height: 300px;
+    background-color: #fffffff3;
+    background-size: 500px;
+    border-radius: 16px;
+
+}
 
 @media (min-width: 768px) {
 
@@ -299,5 +305,5 @@ button {
         border-bottom: none;
 
     }
-  
-    }
+
+}
