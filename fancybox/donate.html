@@ -1,54 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
-        <link href="main.css" rel="stylesheet" type="text/css">
-        <link href="form.css" rel="stylesheet">
-    </head>
-    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="form.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="UIscript.js"></script>
 
-        <header>
-        <nav>
-            <a href="index.html">
+</head>
+
+
+<header>
+    <nav>
+        <a href="index.html">
             <img class="logo" src="images/qlogo2.png" alt="logo"></a>
-            
-                 
-                 <label for="toggleAssist">
-                 <img src="images/menu2.png" class="toggle-button" alt="hamburger menu toggle button">
-                 </label>
-            
-            <input type="checkbox" id="toggleAssist">
-                
-    <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="donate.html">Donate</a></li>
-    </ul>
-    
-        </nav>
-        </header>
+
+
+        <label for="toggleAssist">
+            <img src="images/menu2.jpg" class="toggle-button" alt="hamburger menu toggle button">
+        </label>
+
+        <input type="checkbox" id="toggleAssist">
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="donate.html">DONATE</a></li>
+        </ul>
+
+    </nav>
+</header>
+
 <body>
-   
+
     <div class="hero-image5">
 
         <div class="hero-text">
-            
+
             <h1>We need you</h1>
             <p>Your donations help us fight logging by getting our forests included in the Wellington National Park.</p>
-          </div>
+        </div>
     </div>
-      <section>
-        
+    <br>
+    <br>
+    <p>How many Quokka's can we carry to the forest safely?</p>
+
+    <section class="product-grid">
+
+        <div class="draggable">
+            <h4>Fred</h4>
+            <img src="images/quoka3.png" alt="quokka drawing">
+        </div>
+
+        <div class="draggable">
+            <h4>Fran</h4>
+            <img src="images/artq.png" alt="quokka cartoon">
+        </div>
+
+        <div class="draggable">
+            <h4>Famina</h4>
+            <img src="images/cute.png" alt="quokka photo">
+        </div>
+
+        <div class="draggable">
+            <h4>Fabio</h4>
+            <img src="images/quok.jpg" alt="jumping quokka">
+        </div>
+
+    </section>
+
+    <h2 class="quokkaStatus"></h2>
+    <section class="droppable">
+
+    </section>
+
+    <section>
         <img src="images/helpzy.png" class="icon">
         <div class="contain">
             <form class="donate-form white" action="/action_page.php" method="GET">
                 <div class="form-content">
-                    
+
                     <fieldset>
-                        <h2>Can You Help?</h2>
+                        <h2>Can You Donate?</h2>
                         <div class="amount">
                             <div class="button">
                                 <p>$30</p>
@@ -70,7 +111,7 @@
                             </div>
                         </div>
                     </fieldset>
-  
+
                     <fieldset>
                         <h2>Your Information</h2>
                         <div class="field">
@@ -94,7 +135,7 @@
                             <label for="city">City</label>
                             <input type="text" id="city" name="City">
                         </div>
-  
+
                         <div class="field">
                             <label for="State">State</label>
                             <select name="state">
@@ -151,7 +192,7 @@
                                 <option value="WY">Wyoming</option>
                             </select>
                         </div>
-  
+
                         <div class="field">
                             <label for="Country">Country</label>
                             <select name="country">
@@ -407,7 +448,7 @@
                             <input type="email" id="email" name="email">
                         </div>
                     </fieldset>
-  
+
                     <fieldset>
                         <h2>Your Payment Information</h2>
                         <div class="field">
@@ -458,18 +499,15 @@
                 </div>
                 <button id="donationTop" class="donate-submit" type="submit">DONATE</button>
             </form>
-  
+
             <div id="thanks" class="replace flex">
                 <h2>Thank you for your donation!</h2>
-                
-            </div>
-  
-        </div>
-      </section>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    </body>
 
-    <footer>
-        <script src="script.js"></script>
-      </footer>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
 </html>
