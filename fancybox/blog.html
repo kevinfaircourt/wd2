@@ -1,87 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Blog</title>
-        
-        <link href="main.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <script src="script.js"></script>
-    </head>
-    
 
-        <header>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="script.js"></script>
+    <script src="UIscript.js"></script>
+</head>
+
+
+
+<body>
+    <header>
         <nav>
             <a href="index.html">
-            <img class="logo" src="images/qlogo2.png" alt="logo"></a>
-            
-                 
-                 <label for="toggleAssist">
-                 <img src="images/menu2.png" class="toggle-button" alt="hamburger menu toggle button">
-                 </label>
-            
+                <img class="logo" src="images/qlogo2.png" alt="logo"></a>
+
+
+            <label for="toggleAssist">
+                <img src="images/menu2.jpg" class="toggle-button" alt="hamburger menu toggle button">
+            </label>
+
             <input type="checkbox" id="toggleAssist">
-                
+
             <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="donate.html">Donate</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="donate.html">DONATE</a></li>
             </ul>
-    
+
         </nav>
-        </header>
-<body>
+    </header>
+
     <div class="hero-image">
         <div class="hero-text">
             <h1>No More Logging!</h1>
             <p>Blogging is still fine.</p>
+            <a href="donate.html"><button>Donate</button></a>
         </div>
     </div>
-    
+
     <main>
-    <p>How many Quokka's can we carry to the forest safely?</p>
-    <section class="product-grid">
-
-        <div class="draggable">
-        <h4>Fred</h4>
-        <img src="images/quoka3.png" alt="quokka drawing">
-        </div>
-
-        <div class="draggable">
-        <h4>Fran</h4>
-        <img src="images/artq.png" alt="quokka cartoon">
-        </div>
-
-        <div class="draggable">
-        <h4>Famina</h4>
-        <img src="images/cute.png" alt="quokka photo">
-        </div>
-
-        <div class="draggable">
-        <h4>Fabio</h4>
-        <img src="images/quok.jpg" alt="jumping quokka">
+        <br>
+        <h1>News</h1>
+        <div class="container">
+            <h2>2020 Annual Quokka Rescue Holiday Dinner</h2>
+            <h4>April 02, 2020</h4>
+            <p>We are excited to announce our 2020 Annual Quokka Rescue Annual Holiday Dinner. This is the time of year when we get
+                together to kick back, relax, and talk about anything and everything, including…</p>
+            <h3><a href="annualdinner.html">Read More.</a></h3>
         </div>
         
-    </section>
-    
-    <section class="cart-droppable">
-        <div class="droppable">
+        <div class="container">
+            <h2>Quokka Friendly Lanes Along Roads and Highways</h2>
+            <h4>May 06, 2020</h4>
+            <p>WASHINGTON, D.C. – U.S. Senator Tom Carper (D-Del.), top Democrat on the Environment and Public Works
+                Committee, joined U.S. Senators Jeff Merkley (D-Ore.), Lamar Alexander (R-Tenn.) and Mike Rounds
+                (R-S.D.) today to introduce new legislation…</p>
+            <h3><a href="quokkalanes.html">Read More.</a></h3>
         </div>
-    </section>
+      
 
-</div>
+        <div class="container">
+            <h2>Welling University Featured at the 2020 Annual Quokka Rescue Dinner</h2>
+            <h4>June 12, 2020</h4>
+            <p>Feature Presentation by Wellington University Quokka Resaerch Team! Hear the fascinating stories about how Quokkas are learning English and doing Mathematics...</p>
+            <h3><a href="research.html">Read More.</a></h3>
+        </div>
 
-</main>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    </main>
 
 </body>
-<footer>
 
-</footer>
 </html>
