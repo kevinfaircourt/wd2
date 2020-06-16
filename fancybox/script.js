@@ -3,24 +3,7 @@ $(document).ready(function () {
         $(".nav-links").slideToggle();
     });
 
-    var numProducts = 0;
-    
-
-    $(".draggable").draggable();
-
-
-    $(".droppable").droppable({
-        drop: function (event, ui) {
-            numProducts++;
-            var plural = '';
-            if (numProducts > 1) {
-                plural = "s";
-            }
-            $(this)
-                .find("h3")
-                .html("You helped " + numProducts + " Quokka" + plural + "get to the forest!");
-        }
-    });
+  
 
 
     // Replace form with replace message
@@ -50,9 +33,14 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
+    $(".amount .button").click(function() {
+        $(".amount .button").removeClass("active");
+        $(this).addClass("active");
+ }
+    )
     // Go to top of donation
     $('#donationTop').click(function () {
-    window.location = '#thanks';
+        window.location = '#thanks';
     });
 
 
