@@ -9,7 +9,7 @@ fieldset {
     display: flex;
     flex-flow: column;
     align-items: center;
-    font-family: 'raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #1f262b;
     margin: 20px;
     justify-content: center;
@@ -17,7 +17,7 @@ fieldset {
 
 .donate-form label {
     margin: 5px 10px 5px 0;
-    font-family: 'raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #1f262b;
 }
 
@@ -33,7 +33,7 @@ select {
 
 .donate-form option {
     color: #1f262b;
-    font-family: 'rale way', sans-serif;
+    font-family: 'Rale way', sans-serif;
 }
 
 .donate-form .field {
@@ -43,10 +43,9 @@ select {
 .donate-form button {
     padding: 10px;
     background-color: rgb(248, 186, 104);
-    ;
     color: #080808;
     cursor: pointer;
-    font-family: 'raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 20px;
 }
@@ -65,7 +64,7 @@ select {
     text-align: center;
     color: rgb(255, 254, 254);
     font-size: 22px;
-    font-family: 'raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     display: flex;
     align-items: center;
