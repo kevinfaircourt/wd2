@@ -21,7 +21,8 @@ fieldset {
     color: #1f262b;
 }
 
-.donate-form input,select {
+.donate-form input,
+select {
     vertical-align: middle;
     margin: 5px 10px 5px 10px;
     padding: 10px;
@@ -41,7 +42,8 @@ fieldset {
 
 .donate-form button {
     padding: 10px;
-    background-color: rgb(248, 186, 104);;
+    background-color: rgb(248, 186, 104);
+    ;
     color: #080808;
     cursor: pointer;
     font-family: 'raleway', sans-serif;
@@ -55,7 +57,7 @@ fieldset {
     flex-flow: wrap;
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
-    
+
 }
 
 .donate-form .amount .button {
@@ -124,7 +126,7 @@ input {
 }
 
 .button:hover {
-    background-color:#f7823f;
+    background-color: #f7823f;
     border: #f7823f;
     border-width: 1px;
     box-shadow: #1f262b;
@@ -138,8 +140,7 @@ fieldset {
     padding-right: 0px;
 }
 
-.field select
-{
+.field select {
     margin: px;
 }
 
