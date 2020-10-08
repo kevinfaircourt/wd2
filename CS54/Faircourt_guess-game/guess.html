@@ -6,8 +6,8 @@
     <title>Using Conditional Statements</title>
     <link href="site.css" rel="stylesheet">
     <script>
-           var compNumber = prompt('I am thinking of a number between 1 and 100. Can you guess it?','');
-           
+           var numberGuess = prompt('I am thinking of a number between 1 and 100. Can you guess it?','');
+           var compNumber = 77; 
     </script>
 </head>
 
@@ -20,16 +20,14 @@
             <div class="main">
                 <h1>Guess the Number</h1>
                 <script>    
-                var compNumber = 77;   
+                  var numberGuess
               
-                if (compNumber == 77 ) {
-                    document.write("<p>Wow!77 is the number I was thinking of!</p>");
-                }                
-                else (compNumber > 77) {
-                    document.write("<p>Sorry, that number is too high.</p>");
-                }
-                else if (compNumber < 77) {
-                    document.write("<p>Whoops! That number is too low.</p>");
+                if (numberGuess == 77 ) {
+                    document.write("<p>Wow!! 77 is the number I was thinking of!</p>");
+                } if (numberGuess >= 78) {
+                    document.write("<p>Sorry, " + numberGuess + " is too high. Please refresh and try again.</p>");
+                } if (numberGuess <= 76) {
+                    document.write("<p>Whoops! " + numberGuess + " is too low. Please refresh and try again.</p>");
                 }
             
             
