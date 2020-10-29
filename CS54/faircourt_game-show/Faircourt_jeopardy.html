@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Jeopardy</title>
+    <link href="_css/jeop.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
+    <script src="_js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    
+    $('.question').hide();
+    $('h2').click(function() {
+    var $question = $(this).next('.question');
+    if  ($question.is(':hidden')) {
+        $question.slideDown();
+        
+        $(this).addClass('close');
+        
+    } 
+    else {
+        $question.slideUp();
+        $(this).removeClass('close');
+ 
+    }
+
+    }); // end click
+    
+
+    }); // end ready
+    </script>   
+</head>
+
+<body>
+    <main>
+        <h1>Simple Jeopardy</h1>
+        <div class="group">
+            <div class="category">Weights and Measures</div>
+            <div class="answer">
+                <h2>Fabric comes in this 4-letter unit, which can range from 10 to 100 yards</h2>
+                <div class="question">
+                    <p>What is a bolt?</p>
+                </div>
+            </div> <!-- End answer div -->
+        </div> <!-- End question group div -->
+
+        <div class="group">
+            <div class="category">Math Vocab</div>
+            <div class="answer">
+                <h2>It's the side of a right triangle that's opposite the right angle</h2>
+                <div class="question">
+                    <p>What is the hypotenuse?</p>
+                </div>
+            </div> <!-- End answer div -->
+        </div> <!-- End question group div -->
+
+        <div class="group">
+            <div class="category">Meaty Language</div>
+            <div class="answer">
+                <h2>If you complete a rescue of someone, you "save his" this meat</h2>
+                <div class="question">
+                    <p>What is bacon?</p>
+                </div>
+            </div> <!-- End answer div -->
+        </div> <!-- End question group div -->
+
+    </main> <!-- end main div -->
+
+</body>
+
+</html>
