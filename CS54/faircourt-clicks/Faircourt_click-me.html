@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Click Me</title>
+    <link href="_css/site.css" rel="stylesheet">
+    
+    <script src="_js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $('#clk').mouseover(function() {
+        var message = '<p>Good, now click once right there</p>';
+        $('.main').append(message);
+        }); // end mouseover
+
+        $('#clk').click(function() {
+        var message = '<p>Ahh, that hits the spot.</p>';
+        $('.main').append(message);
+        }); // end click
+
+        $('#dblclk').mouseover(function() {
+        var message = '<p>Good, now double‐click right there.</p>';
+        $('.main').append(message);
+        }); // end mouseover
+
+        $('#dblclk').dblclick(function() {
+        var message = '<p>Two clicks, twice as good.</p>';
+        $('.main').append(message);
+        }); // end double click
+
+        $('#noclick').mouseover(function() {
+        var message = '<p>Nope, not there.</p>'; 
+        $('.main').append(message);
+        }); // end mouseover
+        
+        $('#noclick').mouseout(function() {
+        var message = '<p>That is better.Try again.</p>'; 
+        $('.main').append(message);
+        }); // end mouseout
+        
+       
+        }); // end ready
+
+         </script>
+    
+    <style>
+        #clk {
+            width: 300px;
+            height: 200px;
+            background-color: #f7f756;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #000000;
+        }
+        #dblclk {
+            width: 300px;
+            height: 200px;
+            background-color: #8BF764;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #000000;
+        }
+
+        #noclick {
+            width: 300px;
+            height: 200px;
+            background-color: #00E2FF;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid #000000;
+        
+        }
+        
+        #noclick:hover {
+        background-color: #FF0000;
+        }
+        
+
+        #areas {
+            font-family: Arial, Helvetica, sans-serif;
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body id="events">
+    <div class="wrapper">
+        <header>
+            JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL
+        </header>
+        <div class="content">
+            <div class="main">
+                <h1>You are invited to click & hover</h1>
+                <div id="areas">
+                    <div id="clk">Feel free to click here</div>
+                    <div id="dblclk">You are welcome to double-click here</div>
+                    <div id="noclick">But whatever you do, do not put your mouse here!</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Based on Exercises from JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. This exercise by Gerry Clark.</p>
+        </footer>
+    </div>
+</body>
+</html>
