@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using Conditional Statements</title>
+    <link href="site.css" rel="stylesheet">
+    <script>
+           var numberGuess = prompt("I'm thinking of a number between 1 and 100. Can you guess it?",'');
+           var compNumber = 77; 
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL
+        </header>
+        <div class="content">
+            <div class="main">
+                <h1>Guess the Number</h1>
+                <script>    
+                  var numberGuess
+              
+                if (numberGuess == 77 ) {
+                    document.write("<p>Wow!! 77 is the number I was thinking of!</p>");
+                } if (numberGuess >= 78) {
+                    document.write("<p>Sorry, " + numberGuess + " is too high. Please refresh and try again.</p>");
+                } if (numberGuess <= 76) {
+                    document.write("<p>Whoops! " + numberGuess + " is too low. Please refresh and try again.</p>");
+                }
+            
+                </script>
+            </div>
+        </div>
+        <footer>
+            <p>Based on Exercises from JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. This exercise by Gerry Clark.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
