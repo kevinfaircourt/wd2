@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drop down launcher</title>
+    <link href="_css/launch.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="_js/jquery.min.js"></script>
+    
+    
+    <script>
+        
+    $(document).ready(function(){
+    $('#one').hide();
+    $('#two').hide();
+    $('#three').hide();
+    $('.box').hide();
+    $('#open').click(function(){
+     $('#one').slideToggle(500);
+     $('#two').slideToggle(500);
+     $('#three').slideToggle(500);
+     $('.box').slideToggle();
+     
+    });
+}); // end click
+        $('#one').mouseover(function() {
+        $('.box').slideToggle();
+        
+        }); // end mouseover
+
+        $('#one').mouseout(function() {
+        var message = '<p>That is better.Try again.</p>'; 
+        $('.box').slideToggle();
+        }); // end mouseout
+
+        $('#two').mouseover(function() {
+        $('.box').animate({left: '100px'});
+        }); // end mouseover
+
+        $('#three').mouseover(function() {
+        $('.box').animate({right: '600px'});
+        }); // end mouseover
+
+    var $one = $(this).next('.one');
+    if  ($one.is(':hidden')) {
+        $one.slideDown();
+        
+        $(this).addClass('close');
+        
+    } 
+    else {
+        $one.slideUp();
+        $(this).removeClass('close');
+    }
+    
+
+    ; // end ready
+    </script>
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div id="launcher">
+
+            <div id="open">LAUNCHER</div>
+
+            <div id="launchpad">
+                <!-- The dropdown used for launching the animations -->
+                <div id="one">
+                    <!-- button one -->
+                    <i class="far fa-arrow-alt-circle-right fa-3x"></i>
+                </div>
+                <div id="two">
+                    <!-- button two -->
+                    <i class="fas fa-compress fa-3x"></i>
+                </div>
+                <div id="three">
+                    <!-- button three -->
+                    <i class="fas fa-expand-arrows-alt fa-3x"></i>
+                </div>
+            </div> <!-- closing launchpad div -->
+
+        </div> <!-- closing launcher div -->
+
+        <div class="box"></div> <!-- The red box that gets animated -->
+
+        <main>
+            <h1>Launcher</h1>
+            <p>Click above to reveal the launcher.</p>
+            <p id="instructions">Mouseover a button to launch an animation. Move your mouse away to reset.</p>
+        </main>
+    </div> <!-- closing content div -->
+
+
+</body>
+
+</html>

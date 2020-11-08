@@ -1,0 +1,23 @@
+        body {
+            font-family: 'Libre Franklin', sans-serif;
+        }
+
+        #container {
+            width: 80%;
+            background-color: #dee6ca;
+            min-height: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #boxed {
+            padding: 20px;
+            width: 50%;
+            border: 2px solid #000000;
+            background-color: #FFFFFF;
+            margin: 0 auto;
+            color: #2f9a00;
+            font-size: 1.5em;
+            text-align: center;
+        }
