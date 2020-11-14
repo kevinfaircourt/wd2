@@ -9,31 +9,34 @@
 <script>
     /*determines highest lotto number checks against numeric value */
     do {
-        var hiNumber  = prompt("What is the highest number that you want to generate? (Some lotteries are 1 ‐ 47, some 1 ‐ 49.)"," ");
-    hiNumber = parseInt(hiNumber,10);
-    } while(isNaN(hiNumber));
-
-       Math.floor(Math.random() * 49) + 1;
-
-    var lottoNumbers = prompt("How many lotto numbers do you want to generate?"," ");
-
+    var hiNumber = prompt("What is the highest number that you want to generate? (Some lotteries are 1 ‐ 47, some 1 ‐ 49.)"," ");
+    hiNumber = parseInt(hiNumber, 10);
+    } while(isNaN(hiNumber)); // be sure user types in a number
+    
     do {
-        var lottoNumbers  = prompt("What is the highest number that you want to generate? (Some lotteries are 1 ‐ 47, some 1 ‐ 49.)"," ");
-    hiNumber = parseInt(lottoNumbers,10);
-    } while(isNaN(lottoNumbers));
+    var nums = prompt('How many numbers do you want?', '');
+    nums = parseInt(nums, 10);
+    } while (isNaN(nums)); // Be sure the user has typed a number 
+    
+    function rand(highestNumber) {
+    var randomNumber = Math.floor(Math.random() * highestNumber) + 1;
+    return randomNumber;
+    }
+
+    var numList = []; // Initialize the array that will hold the lucky numbers
+    var newNum = 0; // Create a variable to hold the potential next number
+
+    for (var i = 0; i < nums;) { // Go through this loop nums times
+ // In this case there is no third statement. We only increment in the loop, if we got a valid number
    
-    Math.floor(Math.random() * 5) + 1;
-    array.join(separator);
+    newNum = rand(hiNumber); // newNum is the number we want to add to the array, IF...
+    if (!numList.includes(newNum)) { // If the new number is not already in the array
+    numList.unshift(newNum); // Add the new number to the array
+    i++; // Increment value of i so you can get next number in array
+    } // If number IS already in the array, go back to top of loop and get a new number
+    }
 
     </script> 
-<script> 
-     
-
-    
-    var luckyNumbers = ["6", "47", "17", "5"];
-    
-    var luckyStr = luckyNumbers.join(" * ");
-</script>
 </head>
 
 <body>
@@ -45,11 +48,8 @@
         <main>
             <div id="boxed">
             <script>
-                document.write("<p>Your lucky numbers are, " + hiNumber + lottoNumbers "</p>");
-                document.(luckyStr);
-                document.write("boxed").innerHTML 
-                document.write('</p>')
-                Math.floor(Math.random() * 5) + 1;
+                document.write('<p class="boxed">Your lucky numbers are: ' + numList.join("*") + '</p>');
+                
             </script>
             </div> 
              <p>Good luck!</p>
