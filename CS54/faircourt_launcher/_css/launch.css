@@ -114,9 +114,9 @@ p {
     
 }
 
-#one,
-#two,
-#three {
+.one,
+.two,
+.three {
     display: inline-block;
 }
 
