@@ -6,27 +6,58 @@
     <title>A Simple Quiz Version 2</title>
     <link href="site.css" rel="stylesheet">
     <script>
-        var userGuess = prompt(question[0],'');
-        var score = 0;
-
-        var question = [
-            ['What is most abundant?', 'Hydrogen'],
-            ['What floats?', 'Helium'],
-            ['What is hexagonal?','Carbon'],
-            ['What is plant farts?', 'Oxygen'],
-            ['What is pool sanitation?', 'Chlorine'],
-            ['What are Bananas full of?', 'Potassium'],
-            ['What is the Planet of Superman?', 'Krypton'],
-            ['What is Ion Power?', 'Iodine'],
-            ['Weight in...?', 'Gold'],
-            ['Going back to...?', 'Californium']
+        do {
+            var numQ = prompt('How may questions? (1-10)','');
+            numQ = parseInt(numQ, 10);
+        } while (isNaN(numQ)); //to be sure numbers only 'not a number'
+        if ((numQ <1) || (numQ >10)) {
+            numQ = 10;
+        }
+        
+        var score = 0; //player starts with zero score the array is nested questions 
+        var questions = [
+            ['Hydrogen', 'H', 'The first letter...'],
+            ['Helium', 'He', 'He might have the answer.'],
+            ['Carbon', 'C', 'Exactly what you think it would be.'],
+            ['Oxygen', 'O', 'It\'s part of H2O.'],
+            ['Chlorine', 'Cl', 'The first two letters, if you spelled it wrong.'],
+            ['Potassium', 'K', 'If you don\'t know this, it\'s O-K.'],
+            ['Krypton', 'Kr', 'It\'s Superman\'s home planet, but the abbreviation is obvious.'],
+            ['Iodine', 'I', 'I can\'t imagine why you need a hint for this one.'],
+            [['Gold', 'Au', 'Comes from the Latin "Aurum".'],
+            ['Californium', 'Cf', 'Yes, it\'s a real element. But it\'s not Ca.']
             ];
-            for (var i=0; i<questions.length; i++) {
-            userGuess(question[i]);
-            }
+            
             function userGuess(question) {
-            var userGuess = prompt(question[0],'');
+            var answer = prompt('What is the atomic symbol for' + question[0], + '2','');
+            
+            if (answer == question[1]) {
+            is correct
+                alert('Right!');
+                score++;
+            } 
+
+        else if (answer == '?') { // If the user types "?", they want a hint
+            alert('Hint: ' + question[2]); // Display the hint
+
+        var answer = prompt('What is the atomic symbol for ' + question[0] + '?', ''); // After the hint, ask the question again
+
+        if (answer == question[1]) { // No chance for second hint. Answer the question or get it wrong.
+
+        alert('Right!');
+            score++;
+            } 
+
+        else alert('No, the answer is ' + question[1]); // If user didn't get it right, then it's wrong.
+} 
+
+        else alert('No, the answer is ' + question[1]); // If user didn't get a hint, and is wrong.
 }
+
+        for (var i = 0; i < numQ; i++) {
+        userGuess(questions[i]);
+        }
+   
     </script>
 </head>
 
@@ -40,22 +71,14 @@
                 <h1>A Simple Quiz Version 2</h1>
        
        <script>
-        var userGuess
-        if (userGuess == question[1]) {
-        alert('Correct!');
-        score++;
-        } else {
-        alert('Sorry. The correct answer is ' + question[1]);
-        } 
-        if (userGuess == '?')
-        alert(hintQ);
+        var message = 'You got ' + score;
+        message += ' out of ' + numQ + ' questions.';
+        document.write('<p>' + message + '</p>');
+        </script>
 
-        
-        
-     
-                </script>
-            </div>
         </div>
+        </div>
+
         <footer>
             <p>Based on Exercises from JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. This exercise by Gerry Clark.</p>
         </footer>
