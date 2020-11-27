@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rollover Images</title>
+    <link href="_css/site.css" rel="stylesheet">
+    <style>
+        #gallery {
+            float: left;
+            width: 90px;
+            margin-right: 30px;
+            margin-left: 10px;
+            border-right: white 1px dotted;
+        }
+        #gallery img {
+            display: inline-block;
+            margin: 0 0 10px 0;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        #photo {
+            margin-left: 150px;
+            position: relative;
+        }
+        #photo img {
+            position: absolute;
+            left: -1000px;
+        }
+    </style>
+    <script src="_js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#gallery img').each(function() {
+        var imgFile = $(this).attr('src');
+        var preloadImage = new Image();
+        var imgExt = /(\.\w{3,4}$)/;
+        preloadImage.src = imgFile.replace(imgExt,'_color$1');
+        
+        // set up hover event handling to switch color thumbnail
+        $(this).hover(
+        function() {
+        $(this).attr('src', preloadImage.src);
+        },
+        function() {
+        $(this).attr('src',imgFile);
+        
+        }); // end hover
+        }); // end each
+        $('#gallery a').click(function(evt) {
+        
+        // don't follow link
+        evt.preventDefault();
+
+        // get path to new image
+        var imgPath = $(this).attr('href');
+
+        // get reference to old image
+        var oldImage = $("#photo img");
+
+        // create html for new image
+        var newImage = $('<img src="' + imgPath + '">');
+        
+        // add to the #photo div
+        $('#photo').prepend(newImage);
+
+        // move in the new image
+        newImage.animate({
+            left: '0' 
+        }); // end animate
+        
+        // move out the old image
+        oldImage.animate({
+            left: '+=750px',
+            opacity: 0},
+            'slow'
+        ); //end animate
+
+        }); // end click
+        }); // end ready
+      
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL
+        </header>
+        <div class="content">
+            <div class="main">
+                <h1>Slideshow Version 2</h1>
+                <div id="gallery">
+                    <a href="_images/photo1.jpg"><img src="_images/thumb1.jpg" width="70" height="70" alt="waterfall"></a>
+                    <a href="_images/photo2.jpg"><img src="_images/thumb2.jpg" width="70" height="70" alt="forest"></a>
+                    <a href="_images/photo3.jpg"><img src="_images/thumb3.jpg" width="70" height="70" alt="cathedral"></a>
+                    <a href="_images/photo4.jpg"><img src="_images/thumb4.jpg" width="70" height="70" alt="reflection"></a>
+                    <a href="_images/photo5.jpg"><img src="_images/thumb5.jpg" width="70" height="70" alt="beach"></a>
+                    <a href="_images/photo6.jpg"><img src="_images/thumb6.jpg" width="70" height="70" alt="tunnel"></a>
+                </div>
+                <div id="photo"></div>
+            </div>
+        </div>
+        <footer>
+            <p>Based on Exercises from JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by <a href="http://sawmac.com/">David McFarland</a>. This exercise by Gerry Clark.</p>
+        </footer>
+    </div>
+</body>
+    
+</html>
