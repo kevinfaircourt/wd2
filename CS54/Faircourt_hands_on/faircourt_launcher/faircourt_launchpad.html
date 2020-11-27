@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drop down launcher</title>
+    <link href="_css/launch.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="_js/jquery.min.js"></script>
+    
+    
+    <script>
+        
+    $(document).ready(function(){
+    $('#launchpad').hide();
+    $('.box').hide();
+    $('#instructions').hide();
+
+    $('#open').click(function(){
+     $('#launchpad').slideToggle(500);
+     $('#instructions').fadeToggle(500);
+     $('.box').toggle();
+     }); // end click
+
+        $('.one').mouseenter(function() {
+        $('.box').animate({
+            left: '+=300px',
+            width: '+=150px',
+            height: '+=150px'
+        }); // end animate
+        }); // end mouseenter one
+
+        $('.one').mouseleave(function() { 
+        $('.box').animate({
+            left: '-=300px',
+            width: '-=150px',
+            height: '-=150px'
+        }); // end animate
+        }); // end mouseleave one
+
+        $('.two').mouseenter(function() {
+        $('.box').animate({
+            width: '-=125px',
+            height: '-=125px'
+            }); // end animate
+        }); // end mouseenter two
+
+        $('.two').mouseleave(function() { 
+        $('.box').animate({
+            width: '+=125px',
+            height: '+=125px'
+        }); // end animate
+        }); // end mouseleave two
+
+        $('.three').mouseenter(function() {
+        var box = $('.box');
+        
+        box.animate ({
+            height: '+=300px'
+        });
+        $('.box').animate({
+            width: '+=450px',
+        }); // end mouseenter three
+
+        $('.three').mouseleave(function() { 
+        var box = $('.box');
+        
+        box.animate ({
+            height: '-=300px'
+        });
+        $('.box').animate({
+            width: '-=450px',
+        });
+        }); // end animate
+        }); // end mouseleave three
+
+
+        }); // end ready
+        
+    </script>
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div id="launcher">
+
+            <div id="open">LAUNCHER</div>
+
+            <div id="launchpad">
+                <!-- The dropdown used for launching the animations -->
+                <div class="one">
+                    <!-- button one -->
+                    <i class="far fa-arrow-alt-circle-right fa-3x"></i>
+                </div>
+                <div class="two">
+                    <!-- button two -->
+                    <i class="fas fa-compress fa-3x"></i>
+                </div>
+                <div class="three">
+                    <!-- button three -->
+                    <i class="fas fa-expand-arrows-alt fa-3x"></i>
+                </div>
+            </div> <!-- closing launchpad div -->
+
+        </div> <!-- closing launcher div -->
+
+        <div class="box"></div> <!-- The red box that gets animated -->
+
+        <main>
+            <h1>Launcher</h1>
+            <p>Click above to reveal the launcher.</p>
+            <p id="instructions">Mouseover a button to launch an animation. Move your mouse away to reset.</p>
+        </main>
+    </div> <!-- closing content div -->
+
+
+</body>
+
+</html>
