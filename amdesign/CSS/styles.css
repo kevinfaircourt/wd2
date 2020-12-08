@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
+/* 
+            .. .  . ...    .                                                
+                                                 MMMMMMMMM.MMMMI MMMMMM$                                                
+                                                 MMM   MMMM MMMMMMMMMMM7                                                
+                                                 MMMMMMMMM  .MMMMMMM                                                    
+                                                 MMM   MMMM  .MMMMM                                                     
+                                                 MMMMMMMMMM   :MMM.                                                     
+                                                 MMMMMMMMM.   :MMM.                                                     
+                                                                                                                        
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                          
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                          
+                           .............    ........... .    ...... .    ..........  .........                          
+                           .MMMMMMMMMMMMMM  MMMMMMMMMMMMM.  MMMMMMMMM.  MMMMMMMMMMM. MMMMMMMMM                          
+                           7MMMMMMMMMMMMMMM MMMMMMMMMMMMMM..MMMMMMMMMM  MMMMMMMMMMM.MMMMMMMMMM                          
+                          .MMMMMMMM  MMMMMMMMMMM.MMM   ZMMM.MMMM  +MMM  MMMMMMM.  . MMMMN    .                          
+                          .MMMI MMMM.MMMMMMMMMMM.MMM    MMM.MMMMMMMMMD  MMMMMMM.     MMMMMM.                            
+                          MMMMMMMMMM MMMM.MMMMMM.MMMMMMMMMM MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                             
+                         .MMMMMMMMMM MMMM .MMMMM.MMMMMMMM8  MMMM MMMMMMMMMMMMMMMMMMMMMMMMMD                             
+                                                                                                                        
+                              .   .              .                 .       .   .           .                            
+                         .MMMMM  .MMMMMMMMMM.    MMMMMMMMMM  MMMMMM. MMMMMMMM.  MMMMMMMMMMM                             
+                         .MMMMMM MMMMMMMMMMM.    MMMMMMMMMMM MMMMMMNMMMMMMMMMM  MMMMMNMMMM                              
+                         .MMMMMMMMMMMMMMMMMM.    MMMM?MMMMMMMMMMMM.MMMM   ,MMMM.    $MMMM                               
+                         .MMMMMMMMMMMMMMMMMM     MMMM?MMMMMMMMMMMM.MMM8.   MMMM.  .8MMMM.                               
+                         .MMMMMMMMMMMMMM.MMMM   MMMM+IMMMMMMMMMMMM MMMM+  MMMMM.  MMMMM                                 
+                         .MMMM.MMMOMMMMM 7MMMMMMMMMM ?MMMM.INMMMMM .MMMMMMMMMM   NMMMMMMMMMMMM                          
+                         .MMMM..M=.MMMMM   MMMMMMM.  ?MMMM  .MMMMM   $MMMMMM.,  MMMMMMMMMMMMMM                          
+                              . .  .   .    . . ..   .   .               . .    .            .                          
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                          
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   
+*/
+
+
+body {font-family: 'Roboto Mono', monospace; color:whitesmoke; font-size: 12px; text-align: justify;}
+	
+#logo { float:left;}
+header {height:100px; background-color:#290000}
+		nav {float:right; width:80%;align-content: right;height: 20%;margin-top:1.5%; margin-bottom: 0%;margin-right: 0.1%}
+		ul {text-align: right; margin-right:0; padding-right:0;} 
+		li {display:inline-block;} 
+		li a {padding:2px; display: block; width:80px;}
+		a:link {color:white; text-align:center; text-decoration:none; background-color:#FFC266;} 
+		a:visited {background-color:#CC6600;}
+		a:hover {background-color:#CC6600;} 
+		a:active {background-color:#BF7300;}
+		#content {height:750px; background-color:black;}
+footer {text-align: right; height:98px;background-color:white;clear:both;}
+
+/*name*/
+		#wrappern {width:970px; background-color:white; margin-left:auto; margin-right: auto;margin-bottom: 0.1%;}
+		#contentn {width: 970px; height:680px; background-color:black;align-content: middle;margin-top:0% }
+		#name { margin-left: 14%; padding: 30% }  
+
+
+/*background styles---------------------------------------*/
+	#wrapperb{width:970px; background-color:whitesmoke; margin-left:auto; margin-right: auto;}
+	#background {width: 970px; height:680px; background-color:black;}
+/*background content page im sorry for the mess*/
+		.slide1 {width:45.5%; height:58.8235294118%;background-color:grey;margin-top: 13.5%; margin-left: 3%;margin-right: 0%; float:left;} 
+
+			.rslides {
+			  position: relative;
+			  list-style: none;
+			  overflow: hidden;
+			  width: 100%;
+			  padding: 0;
+			  margin: 0;
+			  }
+
+			.rslides li {
+			  -webkit-backface-visibility: hidden;
+			  position: absolute;
+			  display: none;
+			  width: 100%;
+			  left: 0;
+			  top: 0;
+			  }
+
+			.rslides li:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+			  }
+
+			.rslides img {
+			  display: block;
+			  height: auto;
+			  float: left;
+			  width: 100%;
+			  border: 0;
+			  }
+
+	.column2 {width:45.5%; height:58.8235294118%; background-color:black; margin-top: 13.5%; float:right;margin-left: 0%;margin-right:3%;}
+	#div1 p {text-align: left;width: 48%; height: 50%; float: left;  margin-top: 0%;margin-bottom: 0%;margin-left:4% ;margin-right: 0%;}
+	#div2   {text-align: center; width:50%; height: 50%;float: right;  margin-top: 0%;margin-bottom: 0%;margin-left: 0%;margin-right: -4%;}
+	#div3 	{text-align: center; width: 50%; height: 50%;float:left; margin-top:0% ;margin-bottom: 0%;margin-left:0% ;margin-right: 0%;}
+	#div4 p {text-align: right; width: 50%; height: 50%;float: right; margin-top:0% ;margin-bottom: 0%;margin-left: 0%;margin-right: 0%;}
+
+/*ascii*/
+		#wrapperas {width:970px; background-color:white; margin-left:auto; margin-right: auto;margin-bottom: 0.1%;}
+		#ascii {width: 970px; height:680px; background-color:black; }
+		#screen {text-align: center;padding-top: 10%}
+
+
+/*who inspires me*/
+	/*design style---------------------------------------*/
+#wrapperins {width:970px; background-color:whitesmoke; margin-left:auto; margin-right: auto;}
+#contentins {width: 970px; height:680px; background-color:black;}
+.columnorman {width:25%; background-color:black; margin-left: 10%; margin-top: 5%; float:left;} 
+.imgnorman { background-color:black;margin-top: 10%;margin-left: 10%; float:left;}
+
+/*everyday design*/
+	/*design style---------------------------------------*/
+#wrappereve {width:970px; background-color:whitesmoke; margin-left:auto; margin-right: auto;}
+#contenteve {width: 970px; height:680px; background-color:black;}
+.columnist {width:20%; background-color:black; margin-left: 10%; margin-top: 15%; float:left;} 
+.imgtoot { background-color:black;margin-top: 10%;margin-left: 10%; float:left;}
+
+
+
+/*Designed underated object*/
+	/*design style---------------------------------------*/
+#wrapperd {width:970px; background-color:whitesmoke; margin-left:auto; margin-right: auto;}
+#contentdes {width: 970px; height:680px; background-color:black;}
+.column1 {width:20%; background-color:black; margin-left: 10%; margin-top: 5%; float:left;} 
+.imgnbulb { background-color:black;margin-top: 10%;margin-left: 10%; float:left;}
+

@@ -1,0 +1,158 @@
+ 
+                                                                                                          
+  /*                                                      .. .  . ...    .                                                
+                                                 MMMMMMMMM.MMMMI MMMMMM$                                                
+                                                 MMM   MMMM MMMMMMMMMMM7                                                
+                                                 MMMMMMMMM  .MMMMMMM                                                    
+                                                 MMM   MMMM  .MMMMM                                                     
+                                                 MMMMMMMMMM   :MMM.                                                     
+                                                 MMMMMMMMM.   :MMM.                                                     
+                                                                                                                        
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                          
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                          
+                           .............    ........... .    ...... .    ..........  .........                          
+                           .MMMMMMMMMMMMMM  MMMMMMMMMMMMM.  MMMMMMMMM.  MMMMMMMMMMM. MMMMMMMMM                          
+                           7MMMMMMMMMMMMMMM MMMMMMMMMMMMMM..MMMMMMMMMM  MMMMMMMMMMM.MMMMMMMMMM                          
+                          .MMMMMMMM  MMMMMMMMMMM.MMM   ZMMM.MMMM  +MMM  MMMMMMM.  . MMMMN    .                          
+                          .MMMI MMMM.MMMMMMMMMMM.MMM    MMM.MMMMMMMMMD  MMMMMMM.     MMMMMM.                            
+                          MMMMMMMMMM MMMM.MMMMMM.MMMMMMMMMM MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                             
+                         .MMMMMMMMMM MMMM .MMMMM.MMMMMMMM8  MMMM MMMMMMMMMMMMMMMMMMMMMMMMMD                             
+                                                                                                                        
+                              .   .              .                 .       .   .           .                            
+                         .MMMMM  .MMMMMMMMMM.    MMMMMMMMMM  MMMMMM. MMMMMMMM.  MMMMMMMMMMM                             
+                         .MMMMMM MMMMMMMMMMM.    MMMMMMMMMMM MMMMMMNMMMMMMMMMM  MMMMMNMMMM                              
+                         .MMMMMMMMMMMMMMMMMM.    MMMM?MMMMMMMMMMMM.MMMM   ,MMMM.    $MMMM                               
+                         .MMMMMMMMMMMMMMMMMM     MMMM?MMMMMMMMMMMM.MMM8.   MMMM.  .8MMMM.                               
+                         .MMMMMMMMMMMMMM.MMMM   MMMM+IMMMMMMMMMMMM MMMM+  MMMMM.  MMMMM                                 
+                         .MMMM.MMMOMMMMM 7MMMMMMMMMM ?MMMM.INMMMMM .MMMMMMMMMM   NMMMMMMMMMMMM                          
+                         .MMMM..M=.MMMMM   MMMMMMM.  ?MMMM  .MMMMM   $MMMMMM.,  MMMMMMMMMMMMMM                          
+                              . .  .   .    . . ..   .   .               . .    .            .                          
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                          
+                         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   */                       
+                                                                                              	
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+	margin:auto;
+	margin-top: 0.5vw;
+	padding: 0;
+	align-content: center;
+	list-style: none;
+	text-decoration:none;
+	text-decoration-color: gray;
+	link-color:none;
+	background-color:darkgrey;
+	}
+
+
+
+		header#canvas {
+		width: 78.5vw;
+		height: 62vw;
+		background-color: #FEEFBC;
+		
+}
+	
+		header#canvas:hover {background-color: #000000;}
+
+
+		main {
+	
+		width: 81.5%;
+		height: 100%;
+		margin-left:8.9% ;
+		background-color: #4C3D4B;
+}
+	
+		main:hover {background-color: #222222;}
+
+
+
+		article {
+	
+		width: 81.4%;
+		height: 100%;
+		margin-left:9.5% ;
+		background-color: #FCF8D3;
+}
+	
+		article:hover {background-color: #333333;}
+
+
+				figure {
+	
+		width: 88%;
+		height: 100%;
+		margin-left:6% ;
+		background-color: #726B5F;
+		}
+	
+		figure:hover {background-color: #444444;}
+
+
+		nav {
+			
+		width: 83%;
+		height: 100%;
+		margin-left:8.5% ;
+		
+		background-color: #D0C9AD;
+}
+	
+		nav:hover {background-color: #555555;}
+
+
+		ol {
+	
+		width: 79%;
+		height: 100%;
+		margin-left:10.2% ;
+		background-color: #F1E9C4;
+		}
+	
+		ol:hover {background-color: #666666;}
+
+
+			ul {
+	
+		width: 51%;
+		height: 100%;
+		margin-left:24.7% ;
+		background-color: #A2866A;
+}
+	
+		ul:hover {background-color: #777777;}
+
+
+			li  {
+
+		width: 62%;
+		height: 100%;
+		margin-left:18% ;
+		background-color: #676657;
+		}
+	
+		li:hover {background-color: #999999;}
+
+
+		section  {
+	
+		width: 10%;
+		height: 100%;
+		margin-left:45% ;
+		background-color: #FCF8D3;
+		text-align: center;
+	
+		}
+	
+		section:hover {background-color: white;}
+
+
+	footer {
+				padding:2vw;
+				font-size: 2vw;
+				font-family: 'Press Start 2P', cursive;
+				text-align: center}
+
+
+
