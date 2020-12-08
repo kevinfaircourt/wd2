@@ -1,0 +1,61 @@
+*	{
+	margin:0;
+	padding: 0;
+	align-content: center;
+
+}
+
+	header#canvas {
+		width: 78.5vw;
+		height: 62vw;
+		background-color: #FEEFBC;
+	
+}
+	section {
+	
+		width: 81.5%;
+		height: 100%;
+		margin-left:8.9% ;
+		background-color: #4C3D4B;
+}
+	article {
+	
+	width: 81.4%;
+		height: 100%;
+		margin-left:9.3% ;
+		background-color: #FCF8D3;
+}
+	figure {
+	
+	width: 88%;
+		height: 100%;
+		margin-left:6% ;
+		background-color: #726B5F;
+}
+
+	nav {
+	
+	width: 83%;
+		height: 100%;
+		margin-left:8.5% ;
+		
+		background-color: #D0C9AD;
+}
+
+ol {
+	
+	width: 79%;
+		height: 100%;
+		margin-left:10.2% ;
+		background-color: #F1E9C4;
+}
+ul {
+	
+	width: 51%;
+		height: 100%;
+		margin-left:24.7% ;
+		background-color: #A2866A;
+}
+
+
+

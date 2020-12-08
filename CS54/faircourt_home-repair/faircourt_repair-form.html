@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Make a Reservation</title>
+
+    <link href="form.css" rel="stylesheet">
+    <script src="_js/jquery-ui.min.js"></script>
+    <link href="_js/jquery-ui.min.css" rel="stylesheet">
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/details.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#service_date').datepicker({
+                minDate : 0,
+                maxDate : '+6m'
+            });
+            $('#service').selectmenu({
+                width: 300
+            });
+            $('#details').autocomplete({
+                source : details
+            });
+            $('#level').buttonset();
+            $('#repair').button();
+            { icons : secondary: 'ui-icon-wrench'}
+        }
+        }); // end ready
+</script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <h1>Moe-Larry-Curly Home Repair: Three times as good!</h1>
+            <form>
+                <div>
+                    <label for="service" class="label">Service Requested</label>
+                    <select name="service" id="service">
+                        <option>Window repair</option>
+                        <option>Painting</option>
+                        <option>Plumbing</option>
+                        <option>Electrical</option>
+                        <option>Other fix-it</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="service_date" class="label">Requested service date</label>
+                    <input type="text" id="service_date" name="service_date">
+                </div>
+                <div>
+                    <label for="details" class="label">More details</label>
+                    <input type="text" id="details" name="details">
+                </div>
+
+                <div id="level">
+                    <p class="label labelr">Level of service desired</p>
+
+                    <input type="radio" id="deluxe" name="level" checked="checked">
+                    <label for="deluxe">Deluxe</label>
+
+                    <input type="radio" id="gold" name="level">
+                    <label for="gold">Gold Star</label>
+
+                    <input type="radio" id="white" name="level">
+                    <label for="white">White Glove</label>
+                </div>
+                <div>
+                    <button id="repair">Schedule my repairs</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>Order Form Exercise by Gerry Clark</p>
+        </footer>
+    </div>
+</body>
+
+</html>

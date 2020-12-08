@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist and Favorites</title>
+    
+    <link href="_css/playlist.css" rel="stylesheet">
+    <script src="_js/jquery.min.js"></script>
+    <script src="_js/jquery-ui.min.js"></script>
+    <link href="_css/jquery-ui.min.css" rel="stylesheet">
+
+
+    <script>
+        $(document).ready(function() {
+        $('#favorites').sortable({
+        
+            connectWith : '#playlist',
+            opacity : 0.5,
+            placeholder : 'ui-state-highlight'
+      });
+      $('#playlist').sortable({
+        
+        connectWith : '#playlist',
+        opacity : 0.5,
+        placeholder : 'ui-state-highlight'
+        
+  });
+      
+});
+    
+    ; // end ready
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <main>
+            <h1>Sortable Playlist</h1>
+            Drag songs to build a playlist
+            <div id="playarea">
+                <h2>Playlist</h2>
+                <ol id="playlist">
+                </ol>
+            </div>
+            <div id="favarea">
+                <h2>Favorites</h2>
+                <ul id="favorites">
+                    <li>Like a Rolling Stone - Bob Dylan</li>
+                    <li>(I Can't Get No) Satisfaction - The Rolling Stones</li>
+                    <li>Imagine - John Lennon</li>
+                    <li>What's Going On - Marvin Gaye</li>
+                    <li>Respect - Aretha Franklin</li>
+                    <li>Good Vibrations - The Beach Boys</li>
+                    <li>Johnny B. Goode - Chuck Berry</li>
+                    <li>Hey Jude - The Beatles</li>
+                    <li>Smells Like Teen Spirit - Nirvana</li>
+                    <li>What'd I Say - Ray Charles</li>
+                    <li>My Generation - The Who</li>
+                    <li>A Change Is Gonna Come - Sam Cooke</li>
+                    <li>Yesterday - The Beatles</li>
+                    <li>Blowin' in the Wind - Bob Dylan</li>
+                    <li>London Calling - The Clash</li>
+                    <li>I Want to Hold Your Hand - The Beatles</li>
+                    <li>Purple Haze - The Jimi Hendrix Experience</li>
+                    <li>Maybellene - Chuck Berry</li>
+                    <li>Hound Dog - Elvis Presley</li>
+                    <li>Let It Be - The Beatles</li>
+
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            Playlist Exercise by Gerry Clark
+        </footer>
+    </div> <!-- closing wrapper div -->
+
+</body>
+
+</html>

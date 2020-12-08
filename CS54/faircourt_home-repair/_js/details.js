@@ -1,0 +1,15 @@
+var deets = [
+  { value : "wood floor", label: "problems with wood flooring" },
+  { value : "doors stuck", label: "doors sticking or won't close" },
+  { value : "leaky roof", label: "leaky roof" },
+  { value : "leaky faucet", label: "leaky faucet" },
+  { value : "replace ceiling fan", label: "ceiling fan is broken" },
+  { value : "repair drywall", label: "there are holes in the wall" },
+  { value : "repair cracked tile", label: "my bathroom or kitchen tile is cracked" },
+  { value : "fix gutters", label: "my gutters are not draining properly or are not properly attached" },
+  { value : "fix light switch", label: "the light switch doesn't work properly" },
+  { value : "replace toilet", label: "my toilet needs to be replaced" },
+  { value : "repair garbage disposal", label: "problems with garbage disposal" },
+  { value : "cabinet doors", label: "cabinet doors stick or won't close" },
+  { value : "loose showerhead", label: "shower head is loose" },
+];

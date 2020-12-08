@@ -1,0 +1,52 @@
+        body {
+            font-family: Arial, Verdana, sans-serif;
+        }
+
+        #wrapper {
+            width: 450px;
+            margin-left: 20px;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        ol {
+            padding-left: 1em;
+        }
+
+        #playarea {
+            background-color: #B0CDEA;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+           }
+
+        #playlist,
+        #favorites {
+            min-height: 40px;
+        }
+
+        #favarea {
+            background-color: #EAEAEA;
+            border: 1px solid #000000;
+            padding: 0 10px;
+         }
+
+        #favorites {
+            min-height: 40px;
+            list-style-type: none;
+        }
+
+        li {
+            height: 1em;
+            margin: 5px 2px;
+            padding: 4px 4px 4px 8px;
+            background-color: #FFFFFF;
+        }
+
+footer {
+    font-size: .8em;
+    margin-top: 75px;
+}

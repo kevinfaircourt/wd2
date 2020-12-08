@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery.mmenu demo</title>
+
+    <link href="_css/mmenu.css" rel="stylesheet" />
+    <link href="mmenu/jquery.mmenu.all.css" rel="stylesheet" />
+    <script src="_js/jquery.min.js"></script>
+    <script src="mmenu/jquery.mmenu.all.js"></script>
+    <script>
+        $(document).ready(function() {
+        // call mmenu function 
+        $('#menu').mmenu( {
+            "extensions": ["theme-dark"],
+            "navbars": [
+            {
+                "position": "top",
+                "content": ["searchfield"]
+            }
+            ],
+            "counters": true
+        });
+         }); //end ready
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <a href="#menu"><span></span></a>
+            mMenu jQuery Plugin
+        </header>
+        <div class="content">
+            <p><strong>Hidden Menu</strong><br />
+                Click the menu icon to show/hide the menu.</p>
+        </div>
+        <nav id ="menu">
+        
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us </a>
+                    <ul>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Driving Directions</a></li>
+                        <li><a href="#">Hours</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Our Products </a>
+                    <ul>
+                        <li><a href="#">Gizmos </a>
+                            <ul>
+                                <li><a href="#">Gizmo Basic</a></li>
+                                <li><a href="#">Gizmo Standard</a></li>
+                                <li><a href="#">Gizmo Supreme</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gadgets </a>
+                            <ul>
+                                <li><a href="#">Gadget Basic</a></li>
+                                <li><a href="#">Gadget Standard</a></li>
+                                <li><a href="#">Gadget Supreme</a>
+                                    <ul>
+                                        <li><a href="#">Gadget Supreme A</a></li>
+                                        <li><a href="#">Gadget Supreme B</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Time Machines</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        </nav>
+        <div class="content">
+            <p>Off screen navigation bar using the mMenu jQuery plugin. See details at <a href="http://mmenu.frebsite.nl/">http://mmenu.frebsite.nl/</a> </p>
+        </div>
+        <footer class="footer">Based on mmenu demo. Exercise by Gerry Clark.</footer>
+    </div> <!-- closing wrapper div -->
+</body>
+
+</html>
